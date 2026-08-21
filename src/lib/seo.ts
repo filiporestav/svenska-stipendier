@@ -1,4 +1,5 @@
 import { Locale, buildLocalePath } from "@/lib/i18n";
+import { SITE_URL } from "@/lib/site";
 
 const SITE_NAME = "Svenska stipendier";
 
@@ -67,9 +68,10 @@ export const applySeoMetadata = (locale: Locale, normalizedPath: string) => {
   setMeta("property", "og:site_name", SITE_NAME);
   setMeta("property", "og:type", "website");
 
-  const origin = window.location.origin;
-  setLink("canonical", `${origin}${buildLocalePath(locale, normalizedPath)}`);
-  setLink("alternate", `${origin}${buildLocalePath("sv", normalizedPath)}`, "sv");
-  setLink("alternate", `${origin}${buildLocalePath("en", normalizedPath)}`, "en");
-  setLink("alternate", `${origin}${buildLocalePath("sv", normalizedPath)}`, "x-default");
+  const canonical = `${SITE_URL}${buildLocalePath(locale, normalizedPath)}`;
+  setMeta("property", "og:url", canonical);
+  setLink("canonical", canonical);
+  setLink("alternate", `${SITE_URL}${buildLocalePath("sv", normalizedPath)}`, "sv");
+  setLink("alternate", `${SITE_URL}${buildLocalePath("en", normalizedPath)}`, "en");
+  setLink("alternate", `${SITE_URL}${buildLocalePath("sv", normalizedPath)}`, "x-default");
 };

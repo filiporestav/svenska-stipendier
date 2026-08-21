@@ -1,5 +1,7 @@
 # Svenska stipendier
 
+**[svenska-stipendier.vercel.app](https://svenska-stipendier.vercel.app)**
+
 An open database of scholarships that students in Sweden can apply for, plus the site that browses it.
 
 Every scholarship is one JSON file in [`data/scholarships/`](data/scholarships). The site is a static page built from those files — there is no database, no login, and nothing to pay for. You click through to the awarding body and apply yourself.
@@ -53,7 +55,7 @@ src/pages/Directory.tsx   the list, search and filters
 
 ## History
 
-This started as Lomira, a service that filled in and submitted scholarship applications automatically, built on Supabase, Mailgun and an LLM. That version is gone; what was useful about it was the research, so the list is now open instead. The old implementation is in this repository's git history.
+This started as Lomira, a service that filled in and submitted scholarship applications automatically, built on Supabase, Mailgun and an LLM. That version is gone; what was useful about it was the research, so the list is now open instead. This repository begins at the rewrite and carries none of that code.
 
 ## Licence
 

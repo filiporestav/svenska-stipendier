@@ -3,6 +3,11 @@
 // "add a scholarship" and "report a problem" link on the site is built from it.
 export const GITHUB_REPO = "filiporestav/svenska-stipendier";
 
+// Where the site is served from. Canonical and hreflang links are built from
+// this rather than from window.location, so preview deployments point search
+// engines at production instead of self-canonicalising and getting indexed.
+export const SITE_URL = "https://svenska-stipendier.vercel.app";
+
 export const GITHUB_URL = `https://github.com/${GITHUB_REPO}`;
 export const DATA_DIR_URL = `${GITHUB_URL}/tree/main/data/scholarships`;
 export const CONTRIBUTING_URL = `${GITHUB_URL}/blob/main/CONTRIBUTING.md`;

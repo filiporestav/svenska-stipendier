@@ -13,11 +13,13 @@ anything on anyone's behalf, holds no accounts, and stores nothing about
 applicants.
 
 An earlier version (Lomira) automated application submission via Supabase, Mailgun
-and an LLM. All of it was removed; it survives only in git history. **Do not
-reintroduce a backend, database, auth, or analytics without being asked.**
+and an LLM. All of it was removed, and this repository begins after the removal --
+none of that code is in this history. **Do not reintroduce a backend, database,
+auth, or analytics without being asked.**
 
 Stack: Vite + React 18 + TypeScript + Tailwind. Data is JSON on disk. Deployed as
-a static build (Vercel, SPA rewrite in `vercel.json`).
+a static build to <https://svenska-stipendier.vercel.app> (Vercel, SPA rewrite in
+`vercel.json`), rebuilt on every push to `main`.
 
 ## Commands
 
@@ -43,7 +45,7 @@ data/schema.json              what a scholarship file may contain
 scripts/validate-data.mjs     the validator (zero dependencies, on purpose)
 src/lib/scholarships.ts       loads data at build time, deadline logic, grouping
 src/lib/i18n.ts               every user-visible string, sv + en, plus formatters
-src/lib/site.ts               all GitHub contribution links, built from GITHUB_REPO
+src/lib/site.ts               SITE_URL, and every GitHub contribution link
 src/lib/seo.ts                per-route title/description/canonical/hreflang
 src/pages/Directory.tsx       the list, search and filters — the whole product
 src/pages/About.tsx           prose page
@@ -102,6 +104,12 @@ component.
 
 Every "add a scholarship", "report a problem" and "edit this file" link is built
 in `src/lib/site.ts` from `GITHUB_REPO`. Never hardcode a GitHub URL elsewhere.
+
+The deployed origin lives in the same file as `SITE_URL`, and `src/lib/seo.ts`
+builds canonical and hreflang links from it rather than from `window.location` --
+otherwise every Vercel preview deployment would canonicalise to itself and become
+indexable. `index.html` repeats the origin because it is static; those two are the
+only places the domain may appear.
 
 ### 5. Static means static
 
