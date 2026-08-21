@@ -14,7 +14,7 @@ export const translations = {
       closeMenu: "Stäng meny",
     },
     directory: {
-      tagline: "Sista ansökningsdag först",
+      tagline: "Stipendiedatabas",
       standfirst:
         "Datum med ≈ är uppskattade från förra årets omgång, inte bekräftade av stipendiegivaren.",
       searchPlaceholder: "Namn eller ämne",
@@ -103,7 +103,7 @@ export const translations = {
       closeMenu: "Close menu",
     },
     directory: {
-      tagline: "Closest deadline first",
+      tagline: "Scholarship database",
       standfirst:
         "Dates marked ≈ are estimated from last year's round, not confirmed by the awarding body.",
       searchPlaceholder: "Name or subject",
