@@ -86,6 +86,7 @@ export const translations = {
     about: {
       title: "Om projektet",
       contributeTitle: "Så bidrar du",
+      creditsTitle: "Vilka som gjort listan",
       backToDirectory: "Tillbaka till listan",
     },
     notFound: {
@@ -174,6 +175,7 @@ export const translations = {
     about: {
       title: "About this project",
       contributeTitle: "How to contribute",
+      creditsTitle: "Who made this",
       backToDirectory: "Back to the list",
     },
     notFound: {

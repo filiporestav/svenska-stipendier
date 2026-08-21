@@ -24,6 +24,7 @@ const content = {
     linkNew: "Lägg till ett stipendium",
     linkRepo: "Källkoden på GitHub",
     count: (n: number) => `Listan innehåller ${n} stipendier just nu.`,
+    creditsRest: "Och alla som har skickat in en rättelse sedan dess. Ditt namn hör hemma här också om du gör det.",
   },
   en: {
     intro:
@@ -45,8 +46,35 @@ const content = {
     linkNew: "Add a scholarship",
     linkRepo: "Source code on GitHub",
     count: (n: number) => `The list holds ${n} scholarships right now.`,
+    creditsRest: "And everyone who has sent in a correction since. Your name belongs here too if you do.",
   },
 } as const;
+
+/**
+ * Who did what. The list is research before it is code, so the people who did
+ * the research are named first.
+ */
+const CREDITS = [
+  {
+    role: { sv: "Stipendierna", en: "The scholarships" },
+    people: [
+      { name: "Alexander Karolin", href: "https://www.linkedin.com/in/alexander-karolin/" },
+      { name: "Oskar Wallberg", href: "https://www.linkedin.com/in/oskar-wallberg-b2643320a/" },
+    ],
+    note: {
+      sv: "Har letat upp nästan varje stipendium i listan.",
+      en: "Tracked down almost every scholarship in the list.",
+    },
+  },
+  {
+    role: { sv: "Sidan", en: "The site" },
+    people: [{ name: "Filip Orestav", href: "https://www.linkedin.com/in/filiporestav" }],
+    note: {
+      sv: "Byggde sidan och underhåller repot.",
+      en: "Built the site and maintains the repository.",
+    },
+  },
+] as const;
 
 const About = () => {
   const { copy, locale, pathFor } = useLocale();
@@ -93,7 +121,44 @@ const About = () => {
         ))}
       </ol>
 
-      <div className="mt-12 flex flex-col items-start gap-3 border-t-2 border-ink pt-6">
+      <h2 className="eyebrow mt-14 border-b border-ink pb-1.5 text-ink">
+        {copy.about.creditsTitle}
+      </h2>
+      <dl className="mt-5 max-w-2xl">
+        {CREDITS.map((credit) => (
+          <div
+            key={credit.role.en}
+            className="grid grid-cols-[minmax(0,1fr)] gap-x-6 border-b border-rule py-4 sm:grid-cols-[7rem_minmax(0,1fr)]"
+          >
+            <dt className="eyebrow text-ink-faint">{credit.role[locale]}</dt>
+            <dd className="mt-1.5 sm:mt-0">
+              <p className="font-display text-base font-semibold uppercase tracking-[0.01em] text-ink">
+                {credit.people.map((person, index) => (
+                  <span key={person.href}>
+                    {index > 0 && <span className="text-ink-faint"> &middot; </span>}
+                    <a
+                      href={person.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline hover:underline-offset-4"
+                    >
+                      {person.name}
+                    </a>
+                  </span>
+                ))}
+              </p>
+              <p className="mt-1 text-[0.8125rem] leading-relaxed text-ink-soft">
+                {credit.note[locale]}
+              </p>
+            </dd>
+          </div>
+        ))}
+      </dl>
+      <p className="mt-4 max-w-2xl text-[0.8125rem] leading-relaxed text-ink-soft">
+        {text.creditsRest}
+      </p>
+
+      <div className="mt-14 flex flex-col items-start gap-3 border-t-2 border-ink pt-6">
         {links.map((link) => (
           <a
             key={link.href}
