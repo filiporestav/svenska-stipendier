@@ -6,7 +6,7 @@
  * The design is an index of deadlines, not a feed of cards. Everything below
  * serves that: paper rather than screen-white, ink rather than pure black,
  * hairline rules rather than boxes, and a single signal colour reserved for
- * one job — telling a student a deadline is close.
+ * one job - telling a student a deadline is close.
  *
  * All colours are HSL triplets so Tailwind can apply opacity to them.
  */

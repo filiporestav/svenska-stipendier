@@ -12,7 +12,7 @@ const content = {
       "Det finns inget konto att skapa och ingenting att betala för. Du klickar dig vidare till stipendiegivaren och skickar in ansökan själv.",
     dataTitle: "Om uppgifterna",
     dataBody:
-      "Varje stipendium är en JSON-fil i repot. Datumen är hämtade från förra omgången: för stipendier som återkommer varje år räknar sidan fram nästa förväntade datum och markerar det med ≈. Det är en uppskattning, inte ett besked — kontrollera alltid mot stipendiegivarens egen webbplats.",
+      "Varje stipendium är en JSON-fil i repot. Datumen är hämtade från förra omgången: för stipendier som återkommer varje år räknar sidan fram nästa förväntade datum och markerar det med ≈. Det är en uppskattning, inte ett besked - kontrollera alltid mot stipendiegivarens egen webbplats.",
     contributeBody:
       "Hittar du ett stipendium som saknas, ett datum som har ändrats eller ett som inte längre delas ut? Öppna ett ärende eller skicka en pull request. Ändringar av en fil kontrolleras automatiskt mot dataschemat.",
     steps: [
@@ -33,7 +33,7 @@ const content = {
       "There is no account to create and nothing to pay for. You click through to the awarding body and submit the application yourself.",
     dataTitle: "About the data",
     dataBody:
-      "Each scholarship is a JSON file in the repository. Dates come from the last round: for scholarships that recur annually the site projects the next expected date and marks it with ≈. That is an estimate, not an announcement — always check the awarding body's own website.",
+      "Each scholarship is a JSON file in the repository. Dates come from the last round: for scholarships that recur annually the site projects the next expected date and marks it with ≈. That is an estimate, not an announcement - always check the awarding body's own website.",
     contributeBody:
       "Found a scholarship that is missing, a date that has changed, or one that is no longer awarded? Open an issue or send a pull request. Changes to a file are checked automatically against the data schema.",
     steps: [
