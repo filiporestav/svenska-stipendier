@@ -7,8 +7,8 @@
 <h1 align="center">Svenska stipendier</h1>
 
 <p align="center">
-  An open database of scholarships that students in Sweden can apply for,<br>
-  and the site that browses it.
+  A free list of scholarships you can apply for as a student in Sweden,<br>
+  kept as open data.
 </p>
 
 <p align="center">
@@ -31,22 +31,22 @@
 
 ## What it is
 
-Swedish scholarship money sits with hundreds of small foundations. Each one has its own page, its own dates and its own way of taking applications, and there is no shared listing anywhere, so students either pay for a subscription site or never hear about the money at all. A good part of it goes unclaimed every year.
+There is a lot of scholarship money in Sweden, and it is spread thin. Hundreds of small foundations each hand out their own grants, on their own website, on their own schedule. Nobody lists them all in one place, so students either pay a subscription site to look for them or never hear about them, and every year plenty of the money goes unclaimed.
 
-**Svenska stipendier is that missing listing, kept in the open.** Every scholarship is a single JSON file in [`data/scholarships/`](data/scholarships), and the site is a static page built from those files. There is no database, no login, and nothing to pay for. You find an entry, click through to the awarding body, and apply yourself. The project never submits anything on anyone's behalf and stores nothing about you.
+This is that list, and it is free. Each scholarship is one JSON file in [`data/scholarships/`](data/scholarships), and the site is just a static page built from those files. There is no database, no account and nothing to pay for. You find something you can apply for, click through to the foundation, and apply there. We never touch your application and we store nothing about you.
 
-- **Sorted by deadline**, so the next thing worth applying for is at the top.
-- **Search and filter** by subject, region, university, or whether the window is open now.
+- **Sorted by deadline**, so whatever closes next is at the top.
+- **Search and filter** by subject, region, university, or what is open right now.
 - **Swedish and English**, at `/` and `/en`.
-- **The data is reusable.** Clone it, query it, or build something better on top of it.
+- **The data is yours too.** Clone it, query it, build something better with it.
 
 <p align="center">
   <img src="docs/search.png" alt="Filtering the list to scholarships open now and tagged for studies abroad" width="820">
 </p>
 
-**The data is the point.** If you know a scholarship that is missing, a deadline that moved, or one that no longer exists, open an issue or send a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md). You do not need to know React, or run anything locally, to help.
+Corrections are the most useful thing you can send us. If a scholarship is missing, a deadline has moved, or one is no longer given out, open an issue or a pull request. You do not need to know React, or run anything locally, to help. [CONTRIBUTING.md](CONTRIBUTING.md) explains how.
 
-## What's in a scholarship file
+## What a scholarship file looks like
 
 ```json
 {
@@ -63,11 +63,11 @@ Swedish scholarship money sits with hundreds of small foundations. Each one has 
 }
 ```
 
-Every field is documented in [`data/schema.json`](data/schema.json), and `npm run validate` checks each file against it. The same check runs on every pull request.
+Every field is explained in [`data/schema.json`](data/schema.json), and `npm run validate` checks each file against it. The same check runs on every pull request, so a broken entry never reaches the site.
 
-### About the dates
+### A note on the dates
 
-Stored dates record the last round we confirmed. Most Swedish scholarships recur annually, so the site rolls a past date forward to the next expected occurrence and marks it with `≈`. That is an estimate from last year's cycle, not an announcement, so always check the awarding body's own page before you rely on it.
+The dates here are from the last round we could confirm. Most Swedish scholarships come back at the same time each year, so the site moves a past date forward to when it expects the next one and marks it with `≈`. That is our guess from last year, not something the foundation has announced, so check their own page before you count on it.
 
 ## Running it locally
 
@@ -79,7 +79,7 @@ npm run build     # production build into dist/
 npm run lint
 ```
 
-Node 20 or newer. No environment variables, no API keys, no accounts.
+You need Node 20 or newer. There are no environment variables, API keys or accounts to set up.
 
 ## Project layout
 
@@ -91,10 +91,19 @@ src/lib/scholarships.ts   loads the data at build time, works out deadlines
 src/pages/Directory.tsx   the list, search and filters
 ```
 
-Stack: Vite, React, TypeScript and Tailwind, deployed as a static build. Conventions are documented in [AGENTS.md](AGENTS.md).
+It is a Vite, React, TypeScript and Tailwind app, deployed as a static build. [AGENTS.md](AGENTS.md) covers the conventions in more detail.
+
+## Credits
+
+The list is only worth anything because someone went and found all of these scholarships.
+
+- [Alexander Karolin](https://www.linkedin.com/in/alexander-karolin/) and [Oskar Wallberg](https://www.linkedin.com/in/oskar-wallberg-b2643320a/) tracked down almost every entry in it.
+- [Filip Orestav](https://www.linkedin.com/in/filiporestav) built the site and maintains the repository.
+
+And everyone who has since sent in a correction. Your name belongs here too if you do.
 
 ## Licence
 
-Code is [MIT](LICENSE). The scholarship data in `data/` is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): use it, build on it, just credit the project.
+The code is [MIT](LICENSE). The scholarship data in `data/` is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), so use it, build on it, just credit the project.
 
-The data is maintained by volunteers and comes with no guarantee of accuracy. Verify against the awarding body before applying.
+The list is kept up by volunteers and comes with no guarantee that it is right. Always check with the foundation before you apply.
