@@ -1,0 +1,13 @@
+{
+  "id": "helsingborgs-handelsforening",
+  "name": "Helsingborgs Handelsförening",
+  "url": "https://handelsforeningen.com/studie",
+  "opens": "2026-04-01",
+  "deadline": "2026-04-30",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "region"
+  ],
+  "last_verified": "2026-07-27"
+}

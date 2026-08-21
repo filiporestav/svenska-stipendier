@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/filiporestav/svenska-stipendier/blob/main/data/schema.json",
+  "title": "Scholarship",
+  "description": "One Swedish scholarship. One file per scholarship, in data/scholarships/<id>.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "url", "deadline", "apply_via", "tags", "last_verified"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Slug identifying the scholarship. Must match the filename without .json."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "description": "The scholarship's official name, as the awarding body writes it."
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https?://",
+      "description": "Link to the page a student applies from, as specific as possible."
+    },
+    "opens": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Date the application window opens, YYYY-MM-DD. null if not published."
+    },
+    "deadline": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Application deadline, YYYY-MM-DD. null when the scholarship is rolling."
+    },
+    "recurrence": {
+      "enum": ["annual", "one-off", "rolling"],
+      "description": "annual: returns each year on roughly this date. rolling: apply any time. one-off: will not return."
+    },
+    "apply_via": {
+      "enum": ["website", "email", "post"],
+      "description": "How the application is submitted."
+    },
+    "apply_email": {
+      "type": "string",
+      "format": "email",
+      "description": "Only for apply_via 'email', and only an organisational address, never a private individual's."
+    },
+    "report_required": {
+      "type": "boolean",
+      "description": "True when recipients must report back on how the money was used."
+    },
+    "typical_amount_sek": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "A typical grant in SEK, where known. Indicative, not a promise."
+    },
+    "tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "utlandsstudier",
+          "examensarbete",
+          "forskning",
+          "foretagsstipendium",
+          "kultur",
+          "medlemskap",
+          "region",
+          "kvinnor",
+          "internationellt",
+          "ai",
+          "kth",
+          "chalmers"
+        ]
+      },
+      "description": "Facets used for filtering. Add a new tag to the schema in the same pull request that first uses it."
+    },
+    "notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sv": { "type": ["string", "null"] },
+        "en": { "type": ["string", "null"] }
+      },
+      "description": "Short, factual note about eligibility or process. Public facts only."
+    },
+    "status": {
+      "enum": ["active", "discontinued"],
+      "default": "active",
+      "description": "Set to 'discontinued' rather than deleting the file when a scholarship stops existing."
+    },
+    "last_verified": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "description": "Date someone last checked this entry against the source. Update it whenever you touch the entry."
+    }
+  }
+}

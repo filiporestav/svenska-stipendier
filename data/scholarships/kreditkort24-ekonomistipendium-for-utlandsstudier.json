@@ -1,0 +1,19 @@
+{
+  "id": "kreditkort24-ekonomistipendium-for-utlandsstudier",
+  "name": "Kreditkort24 – Ekonomistipendium för utlandsstudier",
+  "url": "https://kreditkort24.se/stipendium/",
+  "opens": "2025-05-01",
+  "deadline": "2025-12-31",
+  "recurrence": "annual",
+  "apply_via": "email",
+  "tags": [
+    "foretagsstipendium",
+    "utlandsstudier"
+  ],
+  "last_verified": "2026-07-27",
+  "apply_email": "info@kreditkort24.se",
+  "notes": {
+    "sv": "Ansökan mailas in.",
+    "en": "The application is submitted by email."
+  }
+}

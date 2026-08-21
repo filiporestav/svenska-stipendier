@@ -1,0 +1,17 @@
+{
+  "id": "vision-studiestipendium",
+  "name": "Vision Studiestipendium",
+  "url": "https://vision.se/",
+  "opens": "2026-01-01",
+  "deadline": "2026-02-28",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "medlemskap"
+  ],
+  "last_verified": "2026-07-27",
+  "notes": {
+    "sv": "Kräver medlemskap i Vision.",
+    "en": "Requires membership in Vision."
+  }
+}

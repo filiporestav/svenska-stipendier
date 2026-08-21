@@ -1,0 +1,18 @@
+{
+  "id": "ratio-stipendium-for-unga-forskare",
+  "name": "Ratio – Stipendium för unga forskare",
+  "url": "https://ratio.se/forskare/unga-forskare/stipendium-studier-usa",
+  "opens": null,
+  "deadline": "2026-05-31",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "forskning",
+    "utlandsstudier"
+  ],
+  "last_verified": "2026-07-27",
+  "notes": {
+    "sv": "Avser studier i USA.",
+    "en": "For studies in the USA."
+  }
+}

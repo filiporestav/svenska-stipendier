@@ -1,0 +1,32 @@
+name: Something is wrong with an entry
+description: A deadline moved, a link broke, or a scholarship no longer exists.
+title: "Fel i uppgifterna: "
+labels: ["data", "correction"]
+body:
+  - type: input
+    id: scholarship
+    attributes:
+      label: Which scholarship?
+      description: The id from the data file, or just the name.
+      placeholder: kraftska-sallskapet
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong?
+      options:
+        - The deadline or opening date has changed
+        - The link is broken or goes to the wrong page
+        - The scholarship no longer exists
+        - The eligibility description is wrong
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What should it say instead?
+      description: Include a link to where you found the correct information, if you have one.
+    validations:
+      required: true

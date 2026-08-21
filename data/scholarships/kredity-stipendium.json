@@ -1,0 +1,19 @@
+{
+  "id": "kredity-stipendium",
+  "name": "Kredity Stipendium",
+  "url": "https://kredity.se/stipendium/",
+  "opens": null,
+  "deadline": "2026-03-31",
+  "recurrence": "annual",
+  "apply_via": "email",
+  "tags": [
+    "foretagsstipendium"
+  ],
+  "last_verified": "2026-07-27",
+  "apply_email": "kontakt@kredity.se",
+  "typical_amount_sek": 2500,
+  "notes": {
+    "sv": "Ansökan mailas in.",
+    "en": "The application is submitted by email."
+  }
+}

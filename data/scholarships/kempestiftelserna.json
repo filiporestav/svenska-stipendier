@@ -1,0 +1,13 @@
+{
+  "id": "kempestiftelserna",
+  "name": "Kempestiftelserna",
+  "url": "https://www.kempe.com/",
+  "opens": null,
+  "deadline": "2025-09-19",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "forskning"
+  ],
+  "last_verified": "2026-07-27"
+}

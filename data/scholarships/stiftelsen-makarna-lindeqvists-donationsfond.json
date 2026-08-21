@@ -1,0 +1,18 @@
+{
+  "id": "stiftelsen-makarna-lindeqvists-donationsfond",
+  "name": "Stiftelsen Makarna Lindeqvists Donationsfond",
+  "url": "https://goteborg.se/wps/portal/start/omsorg-och-stod/ekonomi-och-ekonomiskt-bistand/stiftelser/ansok-om-pengar-fran-stiftelser",
+  "opens": "2026-01-01",
+  "deadline": "2026-04-30",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "examensarbete",
+    "region"
+  ],
+  "last_verified": "2026-07-27",
+  "notes": {
+    "sv": "Kan sökas för examensarbete inom alla ämnen.",
+    "en": "Can be applied for a degree project in any subject."
+  }
+}

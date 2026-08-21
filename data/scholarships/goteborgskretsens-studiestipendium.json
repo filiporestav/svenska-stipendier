@@ -1,0 +1,18 @@
+{
+  "id": "goteborgskretsens-studiestipendium",
+  "name": "Göteborgskretsens studiestipendium",
+  "url": "https://fredrikabremer.se/stipendier/utbildning/",
+  "opens": "2026-06-15",
+  "deadline": "2026-07-31",
+  "recurrence": "annual",
+  "apply_via": "email",
+  "tags": [
+    "kvinnor",
+    "region"
+  ],
+  "last_verified": "2026-08-21",
+  "notes": {
+    "sv": "För kvinnor 19–40 år med anknytning till Västra Götaland. Studierna ska ha pågått i minst sex månader.",
+    "en": "For women aged 19–40 with a connection to Västra Götaland. Studies must have been ongoing for at least six months."
+  }
+}

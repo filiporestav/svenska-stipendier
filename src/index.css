@@ -1,0 +1,101 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 147 48% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 147 48% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 147 48% 15%;
+
+    --primary: 147 48% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 147 30% 95%;
+    --secondary-foreground: 147 48% 22%;
+
+    --muted: 147 15% 96%;
+    --muted-foreground: 147 20% 45%;
+
+    --accent: 147 40% 88%;
+    --accent-foreground: 147 48% 22%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 147 20% 90%;
+    --input: 147 20% 90%;
+    --ring: 147 48% 22%;
+
+    --radius: 0.5rem;
+
+    --success: 147 60% 45%;
+    --warning: 45 93% 55%;
+    --pending: 45 93% 55%;
+
+    --table-header: 147 25% 97%;
+    --table-row-hover: 147 20% 98%;
+  }
+
+  .dark {
+    --background: 147 25% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 147 20% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 147 20% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 147 50% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 147 25% 18%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 147 20% 18%;
+    --muted-foreground: 147 15% 65%;
+
+    --accent: 147 30% 22%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 147 20% 20%;
+    --input: 147 20% 20%;
+    --ring: 147 50% 45%;
+
+    --success: 147 60% 50%;
+    --warning: 45 93% 55%;
+    --pending: 45 93% 55%;
+
+    --table-header: 147 20% 14%;
+    --table-row-hover: 147 18% 16%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}

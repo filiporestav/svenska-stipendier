@@ -1,0 +1,13 @@
+{
+  "id": "lanero-stipendium",
+  "name": "Lånero Stipendium",
+  "url": "https://xn--lnero-mra.se/stipendium/",
+  "opens": null,
+  "deadline": "2025-10-31",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "foretagsstipendium"
+  ],
+  "last_verified": "2026-07-27"
+}

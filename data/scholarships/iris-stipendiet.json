@@ -1,0 +1,17 @@
+{
+  "id": "iris-stipendiet",
+  "name": "IRIS Stipendiet",
+  "url": "https://www.irisstipendiet.se/ansokan/",
+  "opens": "2025-10-08",
+  "deadline": "2026-01-15",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "kvinnor"
+  ],
+  "last_verified": "2026-07-27",
+  "notes": {
+    "sv": "Söks av kvinnor.",
+    "en": "Open to women."
+  }
+}

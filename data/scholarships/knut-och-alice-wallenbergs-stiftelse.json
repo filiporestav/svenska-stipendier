@@ -1,0 +1,17 @@
+{
+  "id": "knut-och-alice-wallenbergs-stiftelse",
+  "name": "Knut och Alice Wallenbergs Stiftelse",
+  "url": "https://kaw.wallenberg.org/anslagsguide/utlysningar",
+  "opens": null,
+  "deadline": "2025-11-14",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "forskning"
+  ],
+  "last_verified": "2026-07-27",
+  "notes": {
+    "sv": "Utlysningarna riktar sig i huvudsak till postdoktorala forskare.",
+    "en": "The calls are aimed mainly at postdoctoral researchers."
+  }
+}

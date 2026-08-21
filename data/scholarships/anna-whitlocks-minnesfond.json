@@ -1,0 +1,15 @@
+{
+  "id": "anna-whitlocks-minnesfond",
+  "name": "Anna Whitlocks Minnesfond",
+  "url": "https://whitlocks.se/ansokan/",
+  "opens": "2026-01-01",
+  "deadline": "2026-03-01",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "utlandsstudier"
+  ],
+  "last_verified": "2026-07-27",
+  "report_required": true,
+  "typical_amount_sek": 10000
+}

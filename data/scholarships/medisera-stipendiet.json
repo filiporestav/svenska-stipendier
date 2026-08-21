@@ -1,0 +1,19 @@
+{
+  "id": "medisera-stipendiet",
+  "name": "Medisera Stipendiet",
+  "url": "https://medisera.se/medisera-stipendiet/",
+  "opens": null,
+  "deadline": "2026-07-31",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "kth",
+    "forskning"
+  ],
+  "last_verified": "2026-08-21",
+  "typical_amount_sek": 5000,
+  "notes": {
+    "sv": "För fortbildning, utvecklingsarbete eller forskning inom hälsa som motverkar livsstilssjukdomar. Kräver koppling till KTH.",
+    "en": "For training, development work or research in health that counters lifestyle diseases. Requires a connection to KTH."
+  }
+}

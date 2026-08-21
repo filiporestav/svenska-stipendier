@@ -1,0 +1,14 @@
+{
+  "id": "aforsk-resestipendium",
+  "name": "ÅForsk Resestipendium",
+  "url": "https://aforsk.com/ApplicationInformation",
+  "opens": "2026-01-11",
+  "deadline": "2026-02-06",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "utlandsstudier",
+    "examensarbete"
+  ],
+  "last_verified": "2026-07-27"
+}

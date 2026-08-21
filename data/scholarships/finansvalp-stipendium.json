@@ -1,0 +1,13 @@
+{
+  "id": "finansvalp-stipendium",
+  "name": "Finansvalp Stipendium",
+  "url": "https://finansvalp.se/stipendium",
+  "opens": null,
+  "deadline": "2025-12-31",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "foretagsstipendium"
+  ],
+  "last_verified": "2026-07-27"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tryggas-stipendium",
+  "name": "Tryggas Stipendium",
+  "url": "https://trygga.com/om-oss/stipendium/",
+  "opens": null,
+  "deadline": "2025-12-15",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "foretagsstipendium"
+  ],
+  "last_verified": "2026-07-27"
+}

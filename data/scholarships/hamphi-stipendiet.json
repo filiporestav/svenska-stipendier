@@ -1,0 +1,18 @@
+{
+  "id": "hamphi-stipendiet",
+  "name": "Hamphi Stipendiet",
+  "url": "https://hamphi.com/pages/hamphi-stipendiet",
+  "opens": "2025-05-01",
+  "deadline": "2025-08-31",
+  "recurrence": "annual",
+  "apply_via": "email",
+  "tags": [
+    "foretagsstipendium"
+  ],
+  "last_verified": "2026-07-27",
+  "apply_email": "info@hamphi.com",
+  "notes": {
+    "sv": "Ansökan mailas in.",
+    "en": "The application is submitted by email."
+  }
+}

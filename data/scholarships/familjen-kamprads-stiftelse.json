@@ -1,0 +1,13 @@
+{
+  "id": "familjen-kamprads-stiftelse",
+  "name": "Familjen Kamprads Stiftelse",
+  "url": "https://familjenkampradsstiftelse.se/",
+  "opens": "2025-09-02",
+  "deadline": "2025-12-01",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "forskning"
+  ],
+  "last_verified": "2026-07-27"
+}

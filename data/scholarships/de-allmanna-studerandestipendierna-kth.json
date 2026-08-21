@@ -1,0 +1,18 @@
+{
+  "id": "de-allmanna-studerandestipendierna-kth",
+  "name": "De allmänna studerandestipendierna (KTH)",
+  "url": "https://www.kth.se/student/stod/studier/stipendier/stipendieutlysningar/stipendium-ur-de-allmanna-studerandestipendierna-1.1128940",
+  "opens": "2026-01-15",
+  "deadline": "2026-02-15",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "kth"
+  ],
+  "last_verified": "2026-07-27",
+  "typical_amount_sek": 24000,
+  "notes": {
+    "sv": "Endast för KTH-studenter. Besked sänds ut före midsommar.",
+    "en": "KTH students only. Decisions are sent out before midsummer."
+  }
+}

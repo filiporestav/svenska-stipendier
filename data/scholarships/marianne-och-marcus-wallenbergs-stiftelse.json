@@ -1,0 +1,18 @@
+{
+  "id": "marianne-och-marcus-wallenbergs-stiftelse",
+  "name": "Marianne och Marcus Wallenbergs Stiftelse",
+  "url": "https://mmw.wallenberg.org/projekt/wasp-hs-forskning-om-ai-teknik-manniska-och-samhalle",
+  "opens": "2026-03-01",
+  "deadline": "2026-04-01",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "forskning",
+    "ai"
+  ],
+  "last_verified": "2026-07-27",
+  "notes": {
+    "sv": "Riktat mot AI-forskning.",
+    "en": "Aimed at AI research."
+  }
+}

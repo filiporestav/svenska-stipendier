@@ -1,0 +1,18 @@
+{
+  "id": "min-doktors-stipendium-inom-digital-vard",
+  "name": "Min Doktors stipendium inom digital vård",
+  "url": "https://www.mindoktor.se/stipendium/",
+  "opens": null,
+  "deadline": "2026-09-12",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "examensarbete"
+  ],
+  "last_verified": "2026-08-21",
+  "typical_amount_sek": 10000,
+  "notes": {
+    "sv": "För bästa uppsats på kandidat-, magister- eller masternivå om digital vård och omsorg vid ett svenskt lärosäte.",
+    "en": "For the best bachelor's, magister or master's thesis on digital healthcare at a Swedish institution."
+  }
+}

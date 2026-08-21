@@ -1,0 +1,18 @@
+{
+  "id": "vanbruun-guldstipendium",
+  "name": "VANBRUUN Guldstipendium",
+  "url": "https://vanbruun.com/sv-se/stipendium",
+  "opens": null,
+  "deadline": "2025-08-31",
+  "recurrence": "annual",
+  "apply_via": "email",
+  "tags": [
+    "foretagsstipendium"
+  ],
+  "last_verified": "2026-07-27",
+  "apply_email": "info@vanbruun.com",
+  "notes": {
+    "sv": "Ansökan mailas in.",
+    "en": "The application is submitted by email."
+  }
+}

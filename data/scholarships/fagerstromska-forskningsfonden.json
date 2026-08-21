@@ -1,0 +1,13 @@
+{
+  "id": "fagerstromska-forskningsfonden",
+  "name": "Fagerströmska Forskningsfonden",
+  "url": "https://www.samlarforbundet.se/om-oss/forskningsfonden/",
+  "opens": null,
+  "deadline": "2025-12-31",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "forskning"
+  ],
+  "last_verified": "2026-07-27"
+}

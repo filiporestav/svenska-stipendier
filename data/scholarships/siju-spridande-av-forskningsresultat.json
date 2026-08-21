@@ -1,0 +1,17 @@
+{
+  "id": "siju-spridande-av-forskningsresultat",
+  "name": "SIJU – Spridande av forskningsresultat",
+  "url": "https://siju.se/stipendier/",
+  "opens": null,
+  "deadline": "2026-01-20",
+  "recurrence": "annual",
+  "apply_via": "email",
+  "tags": [
+    "forskning"
+  ],
+  "last_verified": "2026-07-27",
+  "notes": {
+    "sv": "Kontakta kansliet via e-postadressen på hemsidan.",
+    "en": "Contact the office at the email address given on their website."
+  }
+}

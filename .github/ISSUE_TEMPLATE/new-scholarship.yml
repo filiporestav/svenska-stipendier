@@ -1,0 +1,50 @@
+name: Add a scholarship
+description: Tell us about a scholarship that is missing from the list.
+title: "Nytt stipendium: "
+labels: ["data", "new scholarship"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in what you know and leave the rest blank — a partial tip is far better than none.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: As the awarding body writes it.
+      placeholder: Kraftska Sällskapet
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Link to the application page
+      description: As specific as possible, not just the organisation's front page.
+      placeholder: https://www.kraftska.se/stipendie/
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      description: YYYY-MM-DD. Write "rolling" if you can apply at any time.
+      placeholder: "2026-02-15"
+  - type: input
+    id: opens
+    attributes:
+      label: Opens
+      description: YYYY-MM-DD, if published.
+  - type: dropdown
+    id: apply_via
+    attributes:
+      label: How is it applied for?
+      options:
+        - Website
+        - Email
+        - Post
+        - Not sure
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything worth knowing
+      description: Who can apply, typical amounts, whether recipients must report back. Public facts only — nothing about your own application.

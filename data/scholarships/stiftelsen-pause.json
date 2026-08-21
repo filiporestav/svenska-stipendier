@@ -1,0 +1,18 @@
+{
+  "id": "stiftelsen-pause",
+  "name": "Stiftelsen PAUSE",
+  "url": "https://stiftelsen-pause.se/stipendium/",
+  "opens": null,
+  "deadline": "2026-01-31",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "tags": [
+    "forskning",
+    "ai"
+  ],
+  "last_verified": "2026-07-27",
+  "notes": {
+    "sv": "Inriktning på artificiell intelligens och maskininlärning i kunskapsarbete.",
+    "en": "Focused on artificial intelligence and machine learning in knowledge work."
+  }
+}
