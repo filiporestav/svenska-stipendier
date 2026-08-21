@@ -7,45 +7,45 @@ import { CONTRIBUTING_URL, DATA_DIR_URL, GITHUB_URL, NEW_SCHOLARSHIP_URL } from 
 const content = {
   sv: {
     intro:
-      "Det här är en öppen lista över stipendier som studenter i Sverige kan söka. Den började som ett kalkylark där vi höll reda på våra egna ansökningar, och ligger nu här så att fler kan använda den.",
+      "Det här är en lista över stipendier du kan söka som student eller forskare i Sverige. Den började som ett kalkylark där vi höll koll på våra egna ansökningar, och ligger nu öppet här så att fler kan ha nytta av den.",
     noAccount:
-      "Det finns inget konto att skapa och ingenting att betala för. Du klickar dig vidare till stipendiegivaren och skickar in ansökan själv.",
+      "Du behöver inget konto och det kostar ingenting. Du klickar dig vidare till stipendiegivaren och skickar in ansökan där.",
     dataTitle: "Om uppgifterna",
     dataBody:
-      "Varje stipendium är en JSON-fil i repot. Datumen är hämtade från förra omgången: för stipendier som återkommer varje år räknar sidan fram nästa förväntade datum och markerar det med ≈. Det är en uppskattning, inte ett besked - kontrollera alltid mot stipendiegivarens egen webbplats.",
+      "Varje stipendium är en JSON-fil i repot. Datumen kommer från den senaste omgången vi har kunnat bekräfta. För stipendier som återkommer varje år räknar sidan fram nästa förväntade datum och markerar det med ≈. Det är vår gissning utifrån förra året, inte ett besked från stipendiegivaren, så kolla alltid deras egen sida.",
     contributeBody:
-      "Hittar du ett stipendium som saknas, ett datum som har ändrats eller ett som inte längre delas ut? Öppna ett ärende eller skicka en pull request. Ändringar av en fil kontrolleras automatiskt mot dataschemat.",
+      "Hittar du ett stipendium som saknas, ett datum som har ändrats eller ett som inte delas ut längre? Hör av dig. Du behöver inte kunna koda för att hjälpa till.",
     steps: [
-      "Öppna ett ärende om du hellre bara vill tipsa oss.",
-      "Eller redigera filen direkt på GitHub och skicka en pull request.",
-      "En kontroll validerar formatet automatiskt innan vi slår ihop den.",
+      "Öppna ett ärende på GitHub om du bara vill tipsa oss.",
+      "Eller ändra filen direkt på GitHub och skicka en pull request.",
+      "En automatisk kontroll går igenom formatet innan ändringen läggs in.",
     ],
     linkData: "Se alla datafiler",
     linkContributing: "Läs bidragsguiden",
     linkNew: "Lägg till ett stipendium",
     linkRepo: "Källkoden på GitHub",
-    count: (n: number) => `Listan innehåller just nu ${n} stipendier.`,
+    count: (n: number) => `Listan innehåller ${n} stipendier just nu.`,
   },
   en: {
     intro:
-      "This is an open list of scholarships students in Sweden can apply for. It started as a spreadsheet where we tracked our own applications, and now lives here so more people can use it.",
+      "This is a list of scholarships you can apply for as a student or researcher in Sweden. It started as a spreadsheet where we kept track of our own applications, and now sits here in the open so more people can get something out of it.",
     noAccount:
-      "There is no account to create and nothing to pay for. You click through to the awarding body and submit the application yourself.",
+      "You do not need an account and it costs nothing. You click through to the awarding body and send your application there.",
     dataTitle: "About the data",
     dataBody:
-      "Each scholarship is a JSON file in the repository. Dates come from the last round: for scholarships that recur annually the site projects the next expected date and marks it with ≈. That is an estimate, not an announcement - always check the awarding body's own website.",
+      "Each scholarship is a JSON file in the repository. The dates come from the last round we could confirm. For scholarships that come back every year, the site works out the next expected date and marks it with ≈. That is our guess from last year, not something the awarding body has announced, so always check their own page.",
     contributeBody:
-      "Found a scholarship that is missing, a date that has changed, or one that is no longer awarded? Open an issue or send a pull request. Changes to a file are checked automatically against the data schema.",
+      "Found a scholarship that is missing, a date that has changed, or one that is no longer given out? Let us know. You do not need to be able to code to help.",
     steps: [
-      "Open an issue if you would rather just tell us about it.",
+      "Open an issue on GitHub if you just want to tip us off.",
       "Or edit the file directly on GitHub and send a pull request.",
-      "A check validates the format automatically before we merge it.",
+      "An automatic check goes over the format before the change goes in.",
     ],
     linkData: "Browse the data files",
     linkContributing: "Read the contributing guide",
     linkNew: "Add a scholarship",
     linkRepo: "Source code on GitHub",
-    count: (n: number) => `The list currently holds ${n} scholarships.`,
+    count: (n: number) => `The list holds ${n} scholarships right now.`,
   },
 } as const;
 

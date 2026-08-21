@@ -7,7 +7,7 @@
 <h1 align="center">Svenska stipendier</h1>
 
 <p align="center">
-  A free list of scholarships you can apply for as a student in Sweden,<br>
+  A free list of scholarships you can apply for as a student or researcher in Sweden,<br>
   kept as open data.
 </p>
 
