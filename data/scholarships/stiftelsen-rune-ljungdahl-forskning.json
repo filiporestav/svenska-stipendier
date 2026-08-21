@@ -1,0 +1,18 @@
+{
+  "id": "stiftelsen-rune-ljungdahl-forskning",
+  "name": "Stiftelsen Rune Ljungdahl – Forskning",
+  "url": "https://stiftelsenrljs.se/forskning/",
+  "opens": null,
+  "deadline": null,
+  "recurrence": "rolling",
+  "apply_via": "website",
+  "typical_amount_sek": 20000,
+  "tags": [
+    "forskning"
+  ],
+  "notes": {
+    "sv": "Bidrag på 20 000–40 000 kr för kringkostnader under forskningsperioden, riktat till svenska doktorander och yngre forskare. Forskningsprojektet ska vara knutet till ett svenskt eller utländskt lärosäte, och ansökan bör göras innan projektet inleds. Ansökningar hanteras löpande tills årets budgeterade medel är förbrukade. Sökande som inte tidigare beviljats stipendium prioriteras.",
+    "en": "Grants of SEK 20,000–40,000 for incidental costs during the research period, aimed at Swedish doctoral students and early-career researchers. The project must be attached to a Swedish or foreign university, and the application should be made before the project starts. Applications are handled on a rolling basis until the year's budgeted funds run out. Applicants who have not previously received a grant are given priority."
+  },
+  "last_verified": "2026-08-21"
+}
