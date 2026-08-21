@@ -14,36 +14,44 @@ export const translations = {
       closeMenu: "Stäng meny",
     },
     directory: {
-      title: "Stipendier för svenska studenter",
-      subtitle:
-        "En öppen lista över stipendier du kan söka själv. Klicka på ett stipendium för att komma till ansökan.",
-      searchPlaceholder: "Sök på namn…",
-      countOne: "1 stipendium",
-      countMany: "{{count}} stipendier",
+      tagline: "Ett öppet register över stipendier du kan söka själv",
+      standfirst:
+        "Sorterat efter sista ansökningsdag. Klicka på ett stipendium för att komma direkt till ansökan hos stipendiegivaren. Datum märkta ≈ är uppskattade från förra årets omgång.",
+      searchPlaceholder: "Sök på namn eller ämne",
+      summary: "{{total}} stipendier · {{open}} går att söka nu",
+      countOne: "1 träff",
+      countMany: "{{count}} träffar",
       noResults: "Inga stipendier matchar din sökning.",
-      clearFilters: "Rensa filter",
-      allTags: "Alla",
-      sortLabel: "Sortering",
+      noResultsHint: "Prova ett bredare filter, eller tipsa oss om ett som saknas.",
+      clearFilters: "Rensa",
+      allTags: "Alla ämnen",
+      filterSubject: "Ämne",
       filterStatus: "Status",
+      rollingHeading: "Löpande ansökan",
+      rollingSub: "Går att söka när som helst",
       lastVerified: "Senast kontrollerad {{date}}",
-      apply: "Till ansökan",
-      applyByEmail: "Ansökan mailas till {{email}}",
+      applyByEmail: "Mailas till {{email}}",
       applyByEmailGeneric: "Ansökan mailas in",
-      applyByPost: "Ansökan skickas per post",
-      reportRequired: "Kräver återrapportering",
-      typicalAmount: "Har delat ut ca {{amount}} kr",
-      projected: "Datum uppskattat från förra årets omgång",
-      reportProblem: "Fel i uppgifterna?",
+      applyByPost: "Skickas per post",
+      reportRequired: "Återrapportering",
+      typicalAmount: "{{amount}} kr",
+      amountUnknown: "Belopp ej angivet",
+      projected: "Uppskattat datum, räknat från förra årets omgång. Kontrollera hos stipendiegivaren.",
+      reportProblem: "Rapportera fel",
+      contributeTitle: "Saknas något?",
+      contributeBody:
+        "Registret underhålls av frivilliga. Hittar du ett stipendium som saknas eller ett datum som ändrats, ta med det.",
     },
     phase: {
-      open: "Öppen",
-      upcoming: "Öppnar snart",
+      open: "Öppna nu",
+      upcoming: "Öppnar senare",
       closed: "Stängd",
       rolling: "Löpande",
       unknown: "Datum saknas",
       all: "Alla",
       opensOn: "Öppnar {{date}}",
       deadlineOn: "Sista dag {{date}}",
+      lastDay: "Sista dagen idag",
       daysLeftOne: "1 dag kvar",
       daysLeftMany: "{{count}} dagar kvar",
     },
@@ -88,36 +96,44 @@ export const translations = {
       closeMenu: "Close menu",
     },
     directory: {
-      title: "Scholarships for students in Sweden",
-      subtitle:
-        "An open list of scholarships you can apply for yourself. Click one to go straight to its application.",
-      searchPlaceholder: "Search by name…",
-      countOne: "1 scholarship",
-      countMany: "{{count}} scholarships",
+      tagline: "An open register of scholarships you can apply for yourself",
+      standfirst:
+        "Ordered by deadline. Click a scholarship to go straight to its application with the awarding body. Dates marked ≈ are projected from last year’s round.",
+      searchPlaceholder: "Search by name or subject",
+      summary: "{{total}} scholarships · {{open}} open to apply now",
+      countOne: "1 result",
+      countMany: "{{count}} results",
       noResults: "No scholarships match your search.",
-      clearFilters: "Clear filters",
-      allTags: "All",
-      sortLabel: "Sort",
+      noResultsHint: "Try a broader filter, or tell us about one that is missing.",
+      clearFilters: "Clear",
+      allTags: "All subjects",
+      filterSubject: "Subject",
       filterStatus: "Status",
+      rollingHeading: "Rolling applications",
+      rollingSub: "Can be applied for at any time",
       lastVerified: "Last checked {{date}}",
-      apply: "Go to application",
-      applyByEmail: "Applications are emailed to {{email}}",
+      applyByEmail: "Email to {{email}}",
       applyByEmailGeneric: "Submitted by email",
-      applyByPost: "Applications are sent by post",
-      reportRequired: "Requires a report back",
-      typicalAmount: "Has awarded around {{amount}} SEK",
-      projected: "Date estimated from last year's round",
-      reportProblem: "Something wrong here?",
+      applyByPost: "Sent by post",
+      reportRequired: "Report back",
+      typicalAmount: "{{amount}} SEK",
+      amountUnknown: "Amount not stated",
+      projected: "Estimated date, projected from last year's round. Check with the awarding body.",
+      reportProblem: "Report an error",
+      contributeTitle: "Something missing?",
+      contributeBody:
+        "The register is maintained by volunteers. If a scholarship is missing or a date has moved, add it.",
     },
     phase: {
-      open: "Open",
-      upcoming: "Opening soon",
+      open: "Open now",
+      upcoming: "Opens later",
       closed: "Closed",
       rolling: "Rolling",
       unknown: "No date",
       all: "All",
       opensOn: "Opens {{date}}",
       deadlineOn: "Deadline {{date}}",
+      lastDay: "Last day today",
       daysLeftOne: "1 day left",
       daysLeftMany: "{{count}} days left",
     },
@@ -200,6 +216,20 @@ export const detectPreferredLocale = (): Locale => {
     : [navigator.language];
   return languages.some((lang) => lang?.toLowerCase().startsWith("sv")) ? "sv" : "en";
 };
+
+export const monthLabel = (date: Date, locale: Locale) =>
+  new Intl.DateTimeFormat(locale === "sv" ? "sv-SE" : "en-GB", {
+    month: "long",
+    year: "numeric",
+  }).format(date);
+
+/** Short month for the date gutter: "aug", "sep". */
+export const shortMonth = (iso: string, locale: Locale) =>
+  new Intl.DateTimeFormat(locale === "sv" ? "sv-SE" : "en-GB", { month: "short" })
+    .format(new Date(`${iso}T00:00:00`))
+    .replace(".", "");
+
+export const dayOfMonth = (iso: string) => Number(iso.slice(8, 10));
 
 export const formatDate = (iso: string, locale: Locale) =>
   new Intl.DateTimeFormat(locale === "sv" ? "sv-SE" : "en-GB", {

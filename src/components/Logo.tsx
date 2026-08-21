@@ -2,40 +2,35 @@ import { useNavigate } from "react-router-dom";
 import { useLocale } from "@/contexts/LocaleContext";
 
 interface LogoProps {
-  className?: string; // Additional classes
-  variant?: "light" | "dark"; // Light = White text (for dark bg), Dark = Black text (for white bg)
-  isLink?: boolean; // If true, wraps in a button to go home
+  className?: string;
+  isLink?: boolean;
 }
 
-export const Logo = ({ className = "", variant = "dark", isLink = true }: LogoProps) => {
+/**
+ * The masthead. Set in the serif at a size that lets it act as a title rather
+ * than a badge, with the two words stacked so it reads as a publication name.
+ */
+export const Logo = ({ className = "", isLink = true }: LogoProps) => {
   const navigate = useNavigate();
   const { pathFor } = useLocale();
-  
-  // Base font style: Satoshi (Heading font), tight tracking, lowercase.
-  // Weight: Medium (500) per requirements.
-  const baseClasses = "font-heading font-medium text-xl tracking-tight select-none";
-  
-  // Colors
-  const colorClass = variant === "light" 
-    ? "text-white" 
-    : "text-neutral-900";
 
-  const Content = (
-    <div className={`flex items-center gap-2 ${baseClasses} ${colorClass} ${className}`}>
-      <span>svenska stipendier</span>
-    </div>
+  const content = (
+    <span
+      className={`font-serif text-lg leading-none tracking-tight text-ink sm:text-xl ${className}`}
+    >
+      Svenska stipendier
+    </span>
   );
 
-  if (isLink) {
-    return (
-      <button 
-        onClick={() => navigate(pathFor("/"))}
-        className="hover:opacity-80 transition-opacity focus:outline-none"
-      >
-        {Content}
-      </button>
-    );
-  }
+  if (!isLink) return content;
 
-  return Content;
+  return (
+    <button
+      type="button"
+      onClick={() => navigate(pathFor("/"))}
+      className="rounded-sm transition-opacity hover:opacity-70"
+    >
+      {content}
+    </button>
+  );
 };

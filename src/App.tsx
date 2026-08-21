@@ -49,7 +49,7 @@ const LocaleLayout = ({ locale }: { locale: Locale }) => {
 
   return (
     <LocaleProvider locale={locale}>
-      <div className="flex min-h-screen flex-col bg-background">
+      <div className="flex min-h-screen flex-col bg-paper">
         <Navbar />
         <div className="flex-1">
           <Outlet />

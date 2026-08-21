@@ -61,40 +61,40 @@ const About = () => {
   ];
 
   return (
-    <main className="mx-auto w-full max-w-2xl px-5 pb-24 pt-12 sm:px-8">
-      <h1 className="font-heading text-3xl font-medium tracking-tight text-foreground">
+    <main className="mx-auto w-full max-w-2xl px-5 pb-28 pt-14 sm:pt-20 sm:px-8">
+      <h1 className="border-b border-ink pb-6 font-serif text-[2rem] leading-tight text-ink sm:text-[2.5rem]">
         {copy.about.title}
       </h1>
 
-      <div className="mt-6 space-y-4 text-foreground/90">
+      <div className="mt-8 space-y-4 text-[0.9375rem] leading-relaxed text-ink-soft">
         <p>{text.intro}</p>
         <p>{text.noAccount}</p>
-        <p className="text-sm text-muted-foreground">{text.count(scholarships.length)}</p>
+        <p className="tnum eyebrow pt-2 text-ink-faint">{text.count(scholarships.length)}</p>
       </div>
 
-      <h2 className="mt-10 font-heading text-xl font-medium text-foreground">
+      <h2 className="eyebrow mt-12 font-sans text-ink">
         {text.dataTitle}
       </h2>
-      <p className="mt-3 text-foreground/90">{text.dataBody}</p>
+      <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-soft">{text.dataBody}</p>
 
-      <h2 className="mt-10 font-heading text-xl font-medium text-foreground">
+      <h2 className="eyebrow mt-12 font-sans text-ink">
         {copy.about.contributeTitle}
       </h2>
-      <p className="mt-3 text-foreground/90">{text.contributeBody}</p>
-      <ol className="mt-4 list-decimal space-y-2 pl-5 text-foreground/90">
+      <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-soft">{text.contributeBody}</p>
+      <ol className="mt-4 list-decimal space-y-2 pl-5 text-[0.9375rem] leading-relaxed marker:text-ink-faint text-ink-soft">
         {text.steps.map((step) => (
           <li key={step}>{step}</li>
         ))}
       </ol>
 
-      <div className="mt-8 flex flex-col gap-2">
+      <div className="mt-10 flex flex-col items-start gap-3 border-t border-rule pt-6">
         {links.map((link) => (
           <a
             key={link.href}
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-primary hover:underline"
+            className="inline-flex items-center gap-1.5 border-b border-accentInk/30 pb-0.5 text-sm text-accentInk transition-colors hover:border-accentInk"
           >
             {link.label}
             <ArrowUpRight className="h-4 w-4" />
@@ -104,7 +104,7 @@ const About = () => {
 
       <Link
         to={pathFor("/")}
-        className="mt-10 inline-block text-sm text-muted-foreground hover:text-foreground hover:underline"
+        className="mt-12 inline-block text-[0.8125rem] text-ink-faint transition-colors hover:text-ink"
       >
         ← {copy.about.backToDirectory}
       </Link>

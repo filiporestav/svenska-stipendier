@@ -1,89 +1,76 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/*
+ * The design is an index of deadlines, not a feed of cards. Everything below
+ * serves that: paper rather than screen-white, ink rather than pure black,
+ * hairline rules rather than boxes, and a single signal colour reserved for
+ * one job — telling a student a deadline is close.
+ *
+ * All colours are HSL triplets so Tailwind can apply opacity to them.
+ */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 147 48% 15%;
+    /* Warm off-white. Pure #fff makes long lists glare and reads as default. */
+    --paper: 44 30% 97%;
+    /* Near-black carrying a green cast, so the accent feels native to it. */
+    --ink: 156 26% 11%;
+    --ink-soft: 156 8% 40%;
+    --ink-faint: 156 7% 56%;
+    --rule: 150 12% 87%;
+    --rule-strong: 156 14% 74%;
+    --accent-ink: 152 44% 22%;
+    /* Reserved for urgency. If this appears anywhere decorative, it is a bug. */
+    --signal: 14 66% 44%;
+    --wash: 45 26% 94%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 147 48% 15%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 147 48% 15%;
-
-    --primary: 147 48% 22%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 147 30% 95%;
-    --secondary-foreground: 147 48% 22%;
-
-    --muted: 147 15% 96%;
-    --muted-foreground: 147 20% 45%;
-
-    --accent: 147 40% 88%;
-    --accent-foreground: 147 48% 22%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 147 20% 90%;
-    --input: 147 20% 90%;
-    --ring: 147 48% 22%;
-
-    --radius: 0.5rem;
-
-    --success: 147 60% 45%;
-    --warning: 45 93% 55%;
-    --pending: 45 93% 55%;
-
-    --table-header: 147 25% 97%;
-    --table-row-hover: 147 20% 98%;
+    /* Shadcn tokens, mapped onto the palette above so stray primitives match. */
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: var(--paper);
+    --card-foreground: var(--ink);
+    --popover: var(--paper);
+    --popover-foreground: var(--ink);
+    --primary: var(--accent-ink);
+    --primary-foreground: 44 30% 97%;
+    --secondary: var(--wash);
+    --secondary-foreground: var(--ink);
+    --muted: var(--wash);
+    --muted-foreground: var(--ink-soft);
+    --accent: var(--wash);
+    --accent-foreground: var(--ink);
+    --destructive: var(--signal);
+    --destructive-foreground: 44 30% 97%;
+    --border: var(--rule);
+    --input: var(--rule);
+    --ring: var(--accent-ink);
+    --radius: 0.25rem;
   }
 
-  .dark {
-    --background: 147 25% 8%;
-    --foreground: 0 0% 100%;
+  /*
+   * There is no theme switch, so the OS preference is the only signal we have.
+   * The paper metaphor still holds in the dark: ink and paper simply swap
+   * roles, and the signal colour lifts so it stays legible against them.
+   */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: 156 22% 8%;
+      --ink: 44 24% 93%;
+      --ink-soft: 150 8% 62%;
+      --ink-faint: 150 8% 48%;
+      --rule: 156 12% 19%;
+      --rule-strong: 156 10% 30%;
+      --accent-ink: 150 38% 62%;
+      --signal: 18 70% 62%;
+      --wash: 156 16% 12%;
 
-    --card: 147 20% 12%;
-    --card-foreground: 0 0% 100%;
-
-    --popover: 147 20% 12%;
-    --popover-foreground: 0 0% 100%;
-
-    --primary: 147 50% 45%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 147 25% 18%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 147 20% 18%;
-    --muted-foreground: 147 15% 65%;
-
-    --accent: 147 30% 22%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 62.8% 50.6%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 147 20% 20%;
-    --input: 147 20% 20%;
-    --ring: 147 50% 45%;
-
-    --success: 147 60% 50%;
-    --warning: 45 93% 55%;
-    --pending: 45 93% 55%;
-
-    --table-header: 147 20% 14%;
-    --table-row-hover: 147 18% 16%;
+      --primary-foreground: 156 22% 8%;
+      --destructive-foreground: 156 22% 8%;
+    }
   }
+
 }
 
 @layer base {
@@ -91,11 +78,36 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground font-sans antialiased;
+  html {
+    -webkit-text-size-adjust: 100%;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    /* Slightly open tracking at small sizes keeps the dense rows legible. */
+    font-feature-settings: "cv05" 1;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif font-normal;
+  }
+
+  /* Dates and amounts sit in columns, so their figures must line up. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+
+  /* The small ruled labels above each month, and the filter legends. */
+  .eyebrow {
+    @apply text-[0.6875rem] font-medium uppercase tracking-[0.14em];
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accentInk/60 ring-offset-2 ring-offset-paper rounded-sm;
+  }
+
+  ::selection {
+    background: hsl(var(--accent-ink) / 0.18);
   }
 }

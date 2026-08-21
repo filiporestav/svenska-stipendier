@@ -170,3 +170,70 @@ export function compareByUrgency(a: Scholarship, b: Scholarship, today = new Dat
   if (da !== null && db !== null && da !== db) return da - db;
   return a.name.localeCompare(b.name, "sv");
 }
+
+// ---------------------------------------------------------------------------
+// Grouping
+//
+// The list is an index of deadlines, so it is ordered by date and broken by
+// month. Entries you can apply to at any time have no place on a calendar and
+// collect in a group of their own at the end.
+// ---------------------------------------------------------------------------
+
+export interface DatedEntry {
+  entry: Scholarship;
+  timing: Timing;
+}
+
+export interface MonthGroup {
+  /** "2026-08", or "rolling" for the undated group. */
+  key: string;
+  /** First of the month, for formatting the heading. Null for the rolling group. */
+  month: Date | null;
+  items: DatedEntry[];
+}
+
+export function groupByDeadlineMonth(
+  entries: Scholarship[],
+  today = new Date()
+): MonthGroup[] {
+  const dated: DatedEntry[] = [];
+  const undated: DatedEntry[] = [];
+
+  for (const entry of entries) {
+    const timing = getTiming(entry, today);
+    (timing.deadline ? dated : undated).push({ entry, timing });
+  }
+
+  dated.sort(
+    (a, b) =>
+      a.timing.deadline!.localeCompare(b.timing.deadline!) ||
+      a.entry.name.localeCompare(b.entry.name, "sv")
+  );
+
+  const groups: MonthGroup[] = [];
+  for (const item of dated) {
+    const key = item.timing.deadline!.slice(0, 7);
+    const last = groups[groups.length - 1];
+    if (last?.key === key) {
+      last.items.push(item);
+    } else {
+      const [year, month] = key.split("-").map(Number);
+      groups.push({ key, month: new Date(year, month - 1, 1), items: [item] });
+    }
+  }
+
+  if (undated.length > 0) {
+    undated.sort((a, b) => a.entry.name.localeCompare(b.entry.name, "sv"));
+    groups.push({ key: "rolling", month: null, items: undated });
+  }
+
+  return groups;
+}
+
+/** How many entries a student could start applying to today. */
+export function countOpenNow(entries: Scholarship[], today = new Date()) {
+  return entries.filter((entry) => {
+    const phase = getTiming(entry, today).phase;
+    return phase === "open" || phase === "rolling";
+  }).length;
+}

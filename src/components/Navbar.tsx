@@ -1,5 +1,4 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Github } from "lucide-react";
 import { useLocale } from "@/contexts/LocaleContext";
 import { Logo } from "@/components/Logo";
 import { Locale, buildLocalePath, stripLocaleFromPath } from "@/lib/i18n";
@@ -11,6 +10,7 @@ export const Navbar = () => {
   const navigate = useNavigate();
 
   const switchTo = (next: Locale) => {
+    if (next === locale) return;
     setLocalePreference(next);
     navigate(
       {
@@ -22,43 +22,37 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="border-b border-border">
-      <nav className="mx-auto flex w-full max-w-4xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
+    <header>
+      <nav className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 px-5 pt-6 sm:px-8">
         <Logo />
 
-        <div className="flex items-center gap-4 text-sm">
-          <Link
-            to={pathFor("/about")}
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
+        <div className="flex items-center gap-5 text-[0.8125rem]">
+          <Link to={pathFor("/about")} className="text-ink-soft transition-colors hover:text-ink">
             {copy.nav.about}
           </Link>
-
           <a
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-            aria-label="GitHub"
+            className="text-ink-soft transition-colors hover:text-ink"
           >
-            <Github className="h-4 w-4" />
+            GitHub
           </a>
-
-          <div className="flex items-center rounded-full border border-border p-0.5">
-            {(["sv", "en"] as const).map((option) => (
-              <button
-                key={option}
-                type="button"
-                onClick={() => switchTo(option)}
-                aria-current={locale === option}
-                className={`rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors ${
-                  locale === option
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {option.toUpperCase()}
-              </button>
+          <div className="flex items-baseline gap-1 text-ink-faint">
+            {(["sv", "en"] as const).map((option, index) => (
+              <span key={option} className="flex items-baseline gap-1">
+                {index > 0 && <span aria-hidden="true">/</span>}
+                <button
+                  type="button"
+                  onClick={() => switchTo(option)}
+                  aria-current={locale === option}
+                  className={`rounded-sm transition-colors ${
+                    locale === option ? "font-medium text-ink" : "hover:text-ink"
+                  }`}
+                >
+                  {option.toUpperCase()}
+                </button>
+              </span>
             ))}
           </div>
         </div>

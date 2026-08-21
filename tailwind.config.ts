@@ -1,7 +1,8 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: ["class"],
+  // No theme switch, so dark mode follows the OS preference.
+  darkMode: "media",
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
@@ -14,10 +15,24 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        heading: ["Satoshi", "sans-serif"],
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        serif: ['"Instrument Serif"', "ui-serif", "Georgia", "serif"],
+        heading: ['"Instrument Serif"', "ui-serif", "Georgia", "serif"],
       },
       colors: {
+        paper: "hsl(var(--paper))",
+        ink: {
+          DEFAULT: "hsl(var(--ink))",
+          soft: "hsl(var(--ink-soft))",
+          faint: "hsl(var(--ink-faint))",
+        },
+        rule: {
+          DEFAULT: "hsl(var(--rule))",
+          strong: "hsl(var(--rule-strong))",
+        },
+        accentInk: "hsl(var(--accent-ink))",
+        signal: "hsl(var(--signal))",
+        wash: "hsl(var(--wash))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -51,12 +66,6 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        success: "hsl(var(--success))",
-        warning: "hsl(var(--warning))",
-        pending: "hsl(var(--pending))",
-        tableHeader: "hsl(var(--table-header))",
-        tableRowHover: "hsl(var(--table-row-hover))",
-        lomira: "#0f281e",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -66,7 +75,6 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        blob: "blob 7s infinite",
       },
       keyframes: {
         "accordion-down": {
@@ -83,20 +91,6 @@ export default {
           },
           to: {
             height: "0",
-          },
-        },
-        blob: {
-          "0%": {
-            transform: "translate(0px, 0px) scale(1)",
-          },
-          "33%": {
-            transform: "translate(30px, -50px) scale(1.1)",
-          },
-          "66%": {
-            transform: "translate(-20px, 20px) scale(0.9)",
-          },
-          "100%": {
-            transform: "translate(0px, 0px) scale(1)",
           },
         },
       },
