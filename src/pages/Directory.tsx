@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { ArrowUpRight, Search, X } from "lucide-react";
-import { useLocale } from "@/contexts/LocaleContext";
+import { useLocale } from "@/contexts/locale-context";
 import {
   dayOfMonth,
   fill,

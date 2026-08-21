@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
-import { useLocale } from "@/contexts/LocaleContext";
+import { useLocale } from "@/contexts/locale-context";
 import { scholarships } from "@/lib/scholarships";
 import { CONTRIBUTING_URL, DATA_DIR_URL, GITHUB_URL, NEW_SCHOLARSHIP_URL } from "@/lib/site";
 

@@ -1,20 +1,11 @@
-import React, { createContext, useContext, useMemo } from "react";
+import React, { useMemo } from "react";
 import {
   Locale,
-  TranslationSet,
   buildLocalePath,
   setStoredLocalePreference,
   translations,
 } from "@/lib/i18n";
-
-interface LocaleContextType {
-  locale: Locale;
-  copy: TranslationSet;
-  pathFor: (pathname: string) => string;
-  setLocalePreference: (nextLocale: Locale) => void;
-}
-
-const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
+import { LocaleContext } from "@/contexts/locale-context";
 
 export const LocaleProvider = ({
   children,
@@ -34,12 +25,4 @@ export const LocaleProvider = ({
   );
 
   return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;
-};
-
-export const useLocale = () => {
-  const context = useContext(LocaleContext);
-  if (!context) {
-    throw new Error("useLocale must be used within a LocaleProvider");
-  }
-  return context;
 };

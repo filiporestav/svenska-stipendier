@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useLocale } from "@/contexts/LocaleContext";
+import { useLocale } from "@/contexts/locale-context";
 
 const NotFound = () => {
   const { copy, pathFor } = useLocale();

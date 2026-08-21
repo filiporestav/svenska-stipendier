@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useLocale } from "@/contexts/LocaleContext";
+import { useLocale } from "@/contexts/locale-context";
 import { Logo } from "@/components/Logo";
 import { Locale, buildLocalePath, stripLocaleFromPath } from "@/lib/i18n";
 import { GITHUB_URL } from "@/lib/site";

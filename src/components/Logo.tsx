@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useLocale } from "@/contexts/LocaleContext";
+import { useLocale } from "@/contexts/locale-context";
 
 interface LogoProps {
   className?: string;

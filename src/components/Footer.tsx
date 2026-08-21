@@ -1,4 +1,4 @@
-import { useLocale } from "@/contexts/LocaleContext";
+import { useLocale } from "@/contexts/locale-context";
 import { CONTRIBUTING_URL, GITHUB_URL, NEW_SCHOLARSHIP_URL } from "@/lib/site";
 
 export const Footer = () => {
