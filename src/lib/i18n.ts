@@ -14,9 +14,9 @@ export const translations = {
       closeMenu: "Stäng meny",
     },
     directory: {
-      tagline: "Stipendier du kan söka som student eller forskare i Sverige",
+      tagline: "Sista ansökningsdag först",
       standfirst:
-        "Sorterat efter sista ansökningsdag, så det som stänger härnäst ligger överst. Klicka på ett stipendium så kommer du direkt till ansökan. Datum märkta ≈ är uppskattade utifrån förra årets omgång.",
+        "Datum med ≈ är uppskattade från förra årets omgång, inte bekräftade av stipendiegivaren.",
       searchPlaceholder: "Namn eller ämne",
       searchLabel: "Sök",
       searchAria: "Sök på namn eller ämne",
@@ -78,7 +78,7 @@ export const translations = {
     footer: {
       tagline: "En öppen lista över stipendier du kan söka i Sverige.",
       dataNote:
-        "Uppgifterna sköts av frivilliga och kan hinna bli inaktuella. Kolla alltid stipendiegivarens egen sida innan du söker.",
+        "Frivilliga sköter listan, så den hinner bli fel ibland. Kolla stipendiegivarens egen sida innan du söker.",
       sourceCode: "Källkod på GitHub",
       addScholarship: "Lägg till ett stipendium",
       license: "Data under CC BY 4.0, kod under MIT.",
@@ -103,9 +103,9 @@ export const translations = {
       closeMenu: "Close menu",
     },
     directory: {
-      tagline: "Scholarships you can apply for as a student or researcher in Sweden",
+      tagline: "Closest deadline first",
       standfirst:
-        "Ordered by deadline, so whatever closes next is at the top. Click a scholarship to go straight to the application. Dates marked ≈ are estimated from last year's round.",
+        "Dates marked ≈ are estimated from last year's round, not confirmed by the awarding body.",
       searchPlaceholder: "Name or subject",
       searchLabel: "Find",
       searchAria: "Search by name or subject",
@@ -167,7 +167,7 @@ export const translations = {
     footer: {
       tagline: "An open list of scholarships you can apply for in Sweden.",
       dataNote:
-        "The data is kept up by volunteers and can go out of date. Always check the awarding body's own page before you apply.",
+        "Volunteers keep the list, so it goes wrong sometimes. Check the awarding body's own page before you apply.",
       sourceCode: "Source on GitHub",
       addScholarship: "Add a scholarship",
       license: "Data under CC BY 4.0, code under MIT.",
