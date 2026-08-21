@@ -140,10 +140,11 @@ humans. The rules that bite most often:
 
 ## Design language
 
-The site is **an index of deadlines, not a feed of cards**. The reference is a
-printed timetable or an editorial listings page: paper, ink, hairline rules,
-tabular figures, one accent. Every rule below follows from that. If a change would
-make the page feel more like a marketing site or a dashboard, it is the wrong
+The site is **a departure board for deadlines**, not a feed of cards. The
+reference is a printed timetable: white paper, one solid slab of ink, a hairline
+spine the whole list hangs off, mono for anything scanned and condensed capitals
+for the names. Every rule below follows from that. If a change would make the
+page feel like a marketing site, a dashboard or a template, it is the wrong
 change.
 
 ### Tokens, and only tokens
@@ -153,17 +154,19 @@ The palette lives in `src/index.css` as HSL triplets, exposed through
 
 | Token | Class | Use |
 | --- | --- | --- |
-| `--paper` | `bg-paper` | Page ground. Warm off-white; pure white glares in long lists. |
-| `--ink` | `text-ink`, `border-ink` | Body text, and the heavy rule that closes a masthead. |
-| `--ink-soft` | `text-ink-soft` | Secondary text: status lines, notes, meta. |
-| `--ink-faint` | `text-ink-faint` | Tertiary: eyebrows, counts, placeholders, idle icons. |
-| `--rule` | `border-rule` | Hairline dividers between rows - the main structural device. |
-| `--rule-strong` | `border-rule-strong`, `bg-rule-strong` | Section rules: the search underline, the line beside a month heading. |
-| `--accent-ink` | `text-accentInk`, `border-accentInk` | Links, the active-filter underline, hover state on the row arrow. |
+| `--paper` | `bg-paper` | Page ground. Screen white, deliberately: the board is printed, not warmed up. |
+| `--ink` | `text-ink`, `border-ink` | Text, the 2px rules, and the stamped blocks that mark an active filter. |
+| `--ink-soft` | `text-ink-soft` | Secondary text: meta lines, notes, prose. |
+| `--ink-faint` | `text-ink-faint` | Tertiary: legends, counts, placeholders, the idle arrow. |
+| `--rule` | `border-rule` | Hairlines: between rows, and the spine beside the date rail. |
+| `--rule-strong` | `border-rule-strong` | A hairline that must still read as ink in either theme. |
+| `--board`, `--board-ink` | `.slab`, `bg-board`, `text-boardInk` | The one solid block: the status band and the footer. It inverts with the theme, so it stays the opposite of everything around it. |
+| `--amber` | `text-amber` | Live counters on the slab. Nowhere else. |
 | `--signal` | `text-signal` | **Urgency only** - a deadline within `URGENT_DAYS` (7). |
-| `--wash` | `bg-wash` | The one fill tint, for quiet blocks. |
+| `--wash` | `bg-wash` | Row hover, and nothing else. |
 
-`--signal` is reserved. If it appears anywhere decorative, that is a bug.
+`--signal` and `--amber` are both reserved. If either appears as decoration, that
+is a bug: the mark in the masthead is `bg-ink` for exactly this reason.
 
 shadcn's tokens (`--background`, `--primary`, `--muted`, …) are aliased onto the
 same palette so any stray primitive doesn't look foreign, but new code should use
@@ -176,66 +179,70 @@ hardcoded colour silently breaks it.
 
 ### Typography
 
-- **Instrument Serif** (`font-serif`) for display: the masthead, page titles, the
-  large day numeral in the date gutter, empty-state lines. It ships regular and
-  italic only - **never** add `font-bold` or `font-medium` to it. Emphasis comes
-  from size.
-- **Inter** (`font-sans`) for everything read in quantity, including scholarship
-  names. The base layer sets `h1`–`h3` to serif, so a heading meant to be sans -
-  like a row title or an eyebrow `h2` - sets `font-sans` explicitly.
-- `.tnum` on every date, amount, count and countdown, so figures line up down the
-  page.
-- `.eyebrow` for small ruled labels: month headings, filter legends, the summary
-  line (11px, uppercase, wide tracking).
-- Body sizes are deliberately bespoke and small: `text-[0.9375rem]` for primary
-  rows, `text-[0.8125rem]` for meta and notes. Match the neighbours rather than
-  reaching for Tailwind's default scale.
-- Sentence case in both languages.
+Three cuts of one superfamily, loaded in `index.html`. Which one a string gets is
+decided by how it is read, not by where it sits.
+
+- **IBM Plex Sans Condensed** (`font-display`) for names and titles, always
+  uppercase, semibold or bold. The base layer sets `h1`-`h3` to it.
+- **IBM Plex Mono** (`font-mono`) for anything scanned rather than read: day
+  numerals, countdowns, amounts, counts, filter legends, nav, footer, masthead.
+- **IBM Plex Sans** (`font-sans`) for prose only: the standfirst, the note under
+  a scholarship, About paragraphs.
+- `.eyebrow` is the board legend (mono, 11px, uppercase, `0.16em` tracking) and
+  is the default for every small label on the site.
+- `.tnum` on every date, amount, count and countdown.
+- Section counts are zero-padded to two digits (`06`), the way a board prints
+  them.
+- Body sizes are bespoke and small: `text-[0.9375rem]` for prose,
+  `text-[0.8125rem]` for notes. Match the neighbours rather than reaching for
+  Tailwind's default scale.
+- **No serif anywhere.** There is no `font-serif` in the theme.
 
 ### Layout and structure
 
-- Content column is `max-w-3xl` (`max-w-2xl` for prose on About), padded
-  `px-5 sm:px-8`. The masthead, nav and footer share the same column.
-- Rows are `<li>` items separated by `border-t border-rule first:border-t-0`. The
-  whole row is one `<a>` to the awarding body; secondary actions (the "report an
-  error" link) sit **outside** that anchor so they aren't swallowed by it.
-- The date gutter is the spine of the index:
-  `grid-cols-[2.5rem_minmax(0,1fr)]`, widening to
-  `sm:grid-cols-[3.25rem_minmax(0,1fr)_auto]` where a right-hand amount column
-  appears. Day numeral in serif, month abbreviation in `.eyebrow`, `∞` when there
-  is no date.
-- Entries group by deadline month, each section headed by an eyebrow, a
-  `h-px flex-1 bg-rule-strong` rule and a count. Rolling entries collect in a
-  final undated group.
-- Filters read as a legend, not a toolbar: text `Toggle`s that mark the active
-  option with an `accentInk` underline. No pill chips, no button bars. The search
-  field is a bare `<input>` under a `border-rule-strong` line - not a boxed input.
-- `--radius` is `0.25rem`. Corners are nearly square; avoid `rounded-lg` and
-  larger.
-- **No shadows, no gradients, no filled cards.** Where you want to group things,
-  use a rule.
-- Mobile first: the grid collapses to two columns and the amount moves inline
-  into the meta line. Test at 360px wide.
+- Content column is `max-w-5xl`, padded `px-5 sm:px-8`. Nav, board and footer
+  share it. About narrows its prose with `max-w-2xl` inside the same column.
+- `COLUMNS` in `Directory.tsx` is the geometry of the board:
+  `grid-cols-[3rem_minmax(0,1fr)]`, widening to
+  `sm:grid-cols-[4.5rem_minmax(0,1fr)_auto]`. The month bands use the same grid,
+  so the hairline spine runs unbroken from the first row to the last. Anything
+  new on the board hangs off that grid rather than inventing its own.
+- The date rail is right-aligned: day numeral in mono, month in `.eyebrow`, `∞`
+  when there is no date. Urgent rows colour the numeral and prefix the countdown
+  with `▪`.
+- Rows are `<li>` items separated by `border-t border-rule`. The whole row is one
+  `<a>` to the awarding body; secondary actions (the "report an error" link) sit
+  **outside** that anchor so they aren't swallowed by it.
+- The status band and the footer are the only filled blocks. Use `.slab` for
+  both; do not invent a third.
+- Something that is currently true is stamped, not underlined:
+  `bg-ink text-paper` on a filter, on the language in use, on a primary link. No
+  pills, no button bars, no toolbars.
+- `--radius` is `0`. Nothing on this site is rounded, and nothing has a shadow, a
+  gradient or a card behind it. Where you want to group, use a rule.
+- Icons are text glyphs (`↗`, `←`, `▪`, `│`), not an icon library. `lucide-react`
+  is still installed but the board no longer imports it; don't reach for it.
+- Mobile: the nav wraps, the amount column drops and the amount moves inline into
+  the meta line. Test at 390px with real device emulation, not by narrowing a
+  desktop window.
 
 ### Motion
 
-Near none. `transition-colors` / `transition-opacity` at default durations, plus
-the row arrow's 2px nudge on hover. No entrance animations, no parallax, no
-scroll-triggered reveals.
+Near none. `transition-colors` and `transition-opacity` at default durations, and
+nothing else. No entrance animations, no parallax, no scroll-triggered reveals.
 
 ### Interaction and accessibility
 
-- A global `:focus-visible` ring is defined in `index.css`. Don't clear it with
-  `focus:outline-none` unless you replace it with something at least as visible.
+- A global `:focus-visible` outline (2px ink, offset 2) is defined in
+  `index.css`. Don't clear it with `focus:outline-none` unless you replace it
+  with something at least as visible.
 - Filter toggles carry `aria-pressed`; the language switch carries `aria-current`;
-  icon-only links carry `aria-label`; decorative icons carry `aria-hidden`.
+  decorative glyphs carry `aria-hidden`; the search input carries an `aria-label`
+  from `copy.directory.searchAria`, because its visible label is only the legend.
 - Controls that appear on hover must also appear on `focus-visible` - see the
   per-row report link.
 - External links always get `target="_blank" rel="noopener noreferrer"` and a
-  visible affordance (an `ArrowUpRight`, or the row's hover underline).
-- Inline links are drawn with a `border-b border-accentInk/30` that darkens on
-  hover, not with `underline`.
-- Icons: `lucide-react` only. `h-4 w-4` inline with text, `h-3 w-3` in meta rows.
+  visible affordance (the `↗` glyph, or the row's hover underline).
 
 ### Components
 

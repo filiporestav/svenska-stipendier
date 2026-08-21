@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
 import { useLocale } from "@/contexts/locale-context";
 import { scholarships } from "@/lib/scholarships";
 import { CONTRIBUTING_URL, DATA_DIR_URL, GITHUB_URL, NEW_SCHOLARSHIP_URL } from "@/lib/site";
@@ -61,52 +60,59 @@ const About = () => {
   ];
 
   return (
-    <main className="mx-auto w-full max-w-2xl px-5 pb-28 pt-14 sm:pt-20 sm:px-8">
-      <h1 className="border-b border-ink pb-6 font-serif text-[2rem] leading-tight text-ink sm:text-[2.5rem]">
+    <main className="mx-auto w-full max-w-3xl px-5 pb-24 pt-10 sm:px-8 sm:pt-14">
+      <h1 className="border-b-2 border-ink pb-4 font-display text-[2rem] font-bold uppercase leading-none tracking-[-0.01em] text-ink sm:text-[3rem]">
         {copy.about.title}
       </h1>
 
-      <div className="mt-8 space-y-4 text-[0.9375rem] leading-relaxed text-ink-soft">
+      <div className="mt-8 max-w-2xl space-y-4 text-[0.9375rem] leading-relaxed text-ink-soft">
         <p>{text.intro}</p>
         <p>{text.noAccount}</p>
-        <p className="tnum eyebrow pt-2 text-ink-faint">{text.count(scholarships.length)}</p>
       </div>
 
-      <h2 className="eyebrow mt-12 font-sans text-ink">
-        {text.dataTitle}
-      </h2>
-      <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-soft">{text.dataBody}</p>
+      <p className="slab tnum eyebrow mt-8 inline-block px-3 py-2">
+        {text.count(scholarships.length)}
+      </p>
 
-      <h2 className="eyebrow mt-12 font-sans text-ink">
+      <h2 className="eyebrow mt-14 border-b border-ink pb-1.5 text-ink">{text.dataTitle}</h2>
+      <p className="mt-4 max-w-2xl text-[0.9375rem] leading-relaxed text-ink-soft">{text.dataBody}</p>
+
+      <h2 className="eyebrow mt-14 border-b border-ink pb-1.5 text-ink">
         {copy.about.contributeTitle}
       </h2>
-      <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-soft">{text.contributeBody}</p>
-      <ol className="mt-4 list-decimal space-y-2 pl-5 text-[0.9375rem] leading-relaxed marker:text-ink-faint text-ink-soft">
+      <p className="mt-4 max-w-2xl text-[0.9375rem] leading-relaxed text-ink-soft">{text.contributeBody}</p>
+      <ol className="mt-5 max-w-2xl list-none space-y-3 text-[0.9375rem] leading-relaxed text-ink-soft [counter-reset:step]">
         {text.steps.map((step) => (
-          <li key={step}>{step}</li>
+          <li
+            key={step}
+            className="grid grid-cols-[2rem_minmax(0,1fr)] items-baseline [counter-increment:step]"
+          >
+            <span className="eyebrow tnum text-ink-faint before:[content:counter(step,decimal-leading-zero)]" />
+            <span>{step}</span>
+          </li>
         ))}
       </ol>
 
-      <div className="mt-10 flex flex-col items-start gap-3 border-t border-rule pt-6">
+      <div className="mt-12 flex flex-col items-start gap-3 border-t-2 border-ink pt-6">
         {links.map((link) => (
           <a
             key={link.href}
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 border-b border-accentInk/30 pb-0.5 text-sm text-accentInk transition-colors hover:border-accentInk"
+            className="eyebrow inline-flex items-center gap-2 text-ink-soft transition-colors hover:text-ink"
           >
             {link.label}
-            <ArrowUpRight className="h-4 w-4" />
+            <span aria-hidden="true">&#8599;</span>
           </a>
         ))}
       </div>
 
       <Link
         to={pathFor("/")}
-        className="mt-12 inline-block text-[0.8125rem] text-ink-faint transition-colors hover:text-ink"
+        className="eyebrow mt-12 inline-block text-ink-faint transition-colors hover:text-ink"
       >
-        ← {copy.about.backToDirectory}
+        &#8592; {copy.about.backToDirectory}
       </Link>
     </main>
   );

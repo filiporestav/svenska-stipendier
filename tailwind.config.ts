@@ -16,9 +16,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        serif: ['"Instrument Serif"', "ui-serif", "Georgia", "serif"],
-        heading: ['"Instrument Serif"', "ui-serif", "Georgia", "serif"],
+        sans: ['"IBM Plex Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ['"IBM Plex Sans Condensed"', '"IBM Plex Sans"', "sans-serif"],
+        mono: ['"IBM Plex Mono"', "ui-monospace", "SFMono-Regular", "monospace"],
       },
       colors: {
         paper: "hsl(var(--paper))",
@@ -31,7 +31,9 @@ export default {
           DEFAULT: "hsl(var(--rule))",
           strong: "hsl(var(--rule-strong))",
         },
-        accentInk: "hsl(var(--accent-ink))",
+        board: "hsl(var(--board))",
+        boardInk: "hsl(var(--board-ink))",
+        amber: "hsl(var(--amber))",
         signal: "hsl(var(--signal))",
         wash: "hsl(var(--wash))",
         border: "hsl(var(--border))",

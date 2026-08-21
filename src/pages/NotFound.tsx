@@ -5,15 +5,17 @@ const NotFound = () => {
   const { copy, pathFor } = useLocale();
 
   return (
-    <main className="mx-auto flex w-full max-w-3xl flex-col items-start px-5 py-28 sm:px-8">
-      <h1 className="font-serif text-3xl text-ink">
+    <main className="mx-auto flex w-full max-w-5xl flex-col items-start px-5 py-28 sm:px-8">
+      <p className="eyebrow text-ink-faint">404</p>
+      <h1 className="mt-4 font-display text-3xl font-bold uppercase leading-tight text-ink sm:text-5xl">
         {copy.notFound.title}
       </h1>
       <Link
         to={pathFor("/")}
-        className="mt-4 border-b border-accentInk/40 pb-0.5 text-sm text-accentInk hover:border-accentInk"
+        className="eyebrow mt-8 inline-flex items-center gap-2 bg-ink px-3 py-2 text-paper transition-opacity hover:opacity-80"
       >
-        ← {copy.notFound.back}
+        <span aria-hidden="true">&#8592;</span>
+        {copy.notFound.back}
       </Link>
     </main>
   );

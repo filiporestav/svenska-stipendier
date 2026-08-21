@@ -4,6 +4,10 @@ import { Logo } from "@/components/Logo";
 import { Locale, buildLocalePath, stripLocaleFromPath } from "@/lib/i18n";
 import { GITHUB_URL } from "@/lib/site";
 
+/** Every item in the bar is set alike, so nothing in it competes with the board. */
+const linkClass =
+  "font-mono text-[0.6875rem] uppercase tracking-[0.16em] text-ink-soft transition-colors hover:text-ink";
+
 export const Navbar = () => {
   const { copy, locale, pathFor, setLocalePreference } = useLocale();
   const location = useLocation();
@@ -22,33 +26,34 @@ export const Navbar = () => {
   };
 
   return (
-    <header>
-      <nav className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 px-5 pt-6 sm:px-8">
+    <header className="border-b-2 border-ink">
+      <nav className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-3 px-5 py-4 sm:px-8">
         <Logo />
 
-        <div className="flex items-center gap-5 text-[0.8125rem]">
-          <Link to={pathFor("/about")} className="text-ink-soft transition-colors hover:text-ink">
+        <div className="flex items-center gap-3 sm:gap-6">
+          <Link to={pathFor("/about")} className={linkClass}>
             {copy.nav.about}
           </Link>
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-ink-soft transition-colors hover:text-ink"
-          >
+          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>
             GitHub
           </a>
-          <div className="flex items-baseline gap-1 text-ink-faint">
+          <div className="flex items-center gap-1.5 font-mono text-[0.6875rem] uppercase tracking-[0.16em]">
             {(["sv", "en"] as const).map((option, index) => (
-              <span key={option} className="flex items-baseline gap-1">
-                {index > 0 && <span aria-hidden="true">/</span>}
+              <span key={option} className="flex items-center gap-1.5">
+                {index > 0 && (
+                  <span className="text-ink-faint" aria-hidden="true">
+                    /
+                  </span>
+                )}
                 <button
                   type="button"
                   onClick={() => switchTo(option)}
                   aria-current={locale === option}
-                  className={`rounded-sm transition-colors ${
-                    locale === option ? "font-medium text-ink" : "hover:text-ink"
-                  }`}
+                  className={
+                    locale === option
+                      ? "bg-ink px-1.5 py-0.5 font-medium text-paper"
+                      : "px-1.5 py-0.5 text-ink-soft transition-colors hover:text-ink"
+                  }
                 >
                   {option.toUpperCase()}
                 </button>

@@ -3,28 +3,33 @@
 @tailwind utilities;
 
 /*
- * The design is an index of deadlines, not a feed of cards. Everything below
- * serves that: paper rather than screen-white, ink rather than pure black,
- * hairline rules rather than boxes, and a single signal colour reserved for
- * one job - telling a student a deadline is close.
+ * The site is a departure board for deadlines. Everything below serves that
+ * reading: white paper, one slab of solid ink for the counters and the footer,
+ * mono for anything a reader scans (dates, countdowns, amounts, labels), a
+ * condensed grotesk for the names, hairlines instead of boxes, no rounding,
+ * no shadow. Two colours carry meaning and nothing else: amber for what is
+ * live, signal red for a deadline about to pass.
  *
  * All colours are HSL triplets so Tailwind can apply opacity to them.
  */
 
 @layer base {
   :root {
-    /* Warm off-white. Pure #fff makes long lists glare and reads as default. */
-    --paper: 44 30% 97%;
-    /* Near-black carrying a green cast, so the accent feels native to it. */
-    --ink: 156 26% 11%;
-    --ink-soft: 156 8% 40%;
-    --ink-faint: 156 7% 56%;
-    --rule: 150 12% 87%;
-    --rule-strong: 156 14% 74%;
-    --accent-ink: 152 44% 22%;
-    /* Reserved for urgency. If this appears anywhere decorative, it is a bug. */
-    --signal: 14 66% 44%;
-    --wash: 45 26% 94%;
+    /* Screen white, deliberately. The board is printed, not warmed up. */
+    --paper: 0 0% 100%;
+    --ink: 220 10% 8%;
+    --ink-soft: 220 5% 36%;
+    --ink-faint: 220 5% 58%;
+    --rule: 220 10% 87%;
+    --rule-strong: 220 10% 8%;
+    /* The solid slab: status band at the top, footer at the bottom. */
+    --board: 220 10% 8%;
+    --board-ink: 0 0% 98%;
+    /* Live counters on the slab. Never used as decoration. */
+    --amber: 38 92% 52%;
+    /* Reserved for a deadline inside URGENT_DAYS. Anywhere else is a bug. */
+    --signal: 6 74% 46%;
+    --wash: 220 14% 96%;
 
     /* Shadcn tokens, mapped onto the palette above so stray primitives match. */
     --background: var(--paper);
@@ -33,8 +38,8 @@
     --card-foreground: var(--ink);
     --popover: var(--paper);
     --popover-foreground: var(--ink);
-    --primary: var(--accent-ink);
-    --primary-foreground: 44 30% 97%;
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
     --secondary: var(--wash);
     --secondary-foreground: var(--ink);
     --muted: var(--wash);
@@ -42,35 +47,35 @@
     --accent: var(--wash);
     --accent-foreground: var(--ink);
     --destructive: var(--signal);
-    --destructive-foreground: 44 30% 97%;
+    --destructive-foreground: 0 0% 98%;
     --border: var(--rule);
     --input: var(--rule);
-    --ring: var(--accent-ink);
-    --radius: 0.25rem;
+    --ring: var(--ink);
+    --radius: 0px;
   }
 
   /*
    * There is no theme switch, so the OS preference is the only signal we have.
-   * The paper metaphor still holds in the dark: ink and paper simply swap
-   * roles, and the signal colour lifts so it stays legible against them.
+   * Ink and paper swap, and the slab swaps with them: it stays the one block
+   * on the page that is the opposite of everything around it.
    */
   @media (prefers-color-scheme: dark) {
     :root {
-      --paper: 156 22% 8%;
-      --ink: 44 24% 93%;
-      --ink-soft: 150 8% 62%;
-      --ink-faint: 150 8% 48%;
-      --rule: 156 12% 19%;
-      --rule-strong: 156 10% 30%;
-      --accent-ink: 150 38% 62%;
-      --signal: 18 70% 62%;
-      --wash: 156 16% 12%;
+      --paper: 220 12% 7%;
+      --ink: 210 12% 94%;
+      --ink-soft: 215 8% 64%;
+      --ink-faint: 215 8% 44%;
+      --rule: 220 8% 20%;
+      --rule-strong: 210 12% 94%;
+      --board: 210 12% 94%;
+      --board-ink: 220 12% 7%;
+      --amber: 40 90% 46%;
+      --signal: 8 78% 62%;
+      --wash: 220 10% 12%;
 
-      --primary-foreground: 156 22% 8%;
-      --destructive-foreground: 156 22% 8%;
+      --destructive-foreground: 220 12% 7%;
     }
   }
-
 }
 
 @layer base {
@@ -84,30 +89,38 @@
 
   body {
     @apply bg-paper text-ink font-sans antialiased;
-    /* Slightly open tracking at small sizes keeps the dense rows legible. */
-    font-feature-settings: "cv05" 1;
   }
 
+  /* Names and headings are the condensed cut. Case is set per use. */
   h1, h2, h3 {
-    @apply font-serif font-normal;
+    @apply font-display font-semibold;
   }
 
-  /* Dates and amounts sit in columns, so their figures must line up. */
+  /* Dates, amounts and countdowns sit in columns, so figures must line up. */
   .tnum {
     font-variant-numeric: tabular-nums;
     font-feature-settings: "tnum" 1;
   }
 
-  /* The small ruled labels above each month, and the filter legends. */
+  /*
+   * The board legend: every small label on the site, from filter names to the
+   * month bands to the meta line under a scholarship. Mono, caps, wide.
+   */
   .eyebrow {
-    @apply text-[0.6875rem] font-medium uppercase tracking-[0.14em];
+    @apply font-mono text-[0.6875rem] font-medium uppercase tracking-[0.16em];
+  }
+
+  /* The one solid block, used for the status band and the footer. */
+  .slab {
+    @apply bg-board text-boardInk;
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-accentInk/60 ring-offset-2 ring-offset-paper rounded-sm;
+    @apply outline outline-2 outline-offset-2 outline-ink;
   }
 
   ::selection {
-    background: hsl(var(--accent-ink) / 0.18);
+    background: hsl(var(--ink));
+    color: hsl(var(--paper));
   }
 }
