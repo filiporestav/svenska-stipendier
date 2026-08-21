@@ -1,7 +1,7 @@
 # AGENTS.md
 
 The working guide for this repository: what it is, how to change it safely, and
-what it should look like. It is the single source of project convention — there is
+what it should look like. It is the single source of project convention - there is
 no separate per-tool instructions file. Read it before editing.
 
 ## What this project is
@@ -30,7 +30,7 @@ npm run lint      # ESLint
 npm run build     # production build into dist/
 ```
 
-Node 20 or newer. No environment variables, no API keys, no secrets — if a task
+Node 20 or newer. No environment variables, no API keys, no secrets - if a task
 seems to need one, the task is wrong for this project.
 
 CI (`.github/workflows/ci.yml`) runs `node scripts/validate-data.mjs` and
@@ -40,14 +40,14 @@ and `npm run lint && npm run build` after a code change, before reporting done.
 ## Repository map
 
 ```
-data/scholarships/<id>.json   one scholarship each — the source of truth
+data/scholarships/<id>.json   one scholarship each - the source of truth
 data/schema.json              what a scholarship file may contain
 scripts/validate-data.mjs     the validator (zero dependencies, on purpose)
 src/lib/scholarships.ts       loads data at build time, deadline logic, grouping
 src/lib/i18n.ts               every user-visible string, sv + en, plus formatters
 src/lib/site.ts               SITE_URL, and every GitHub contribution link
 src/lib/seo.ts                per-route title/description/canonical/hreflang
-src/pages/Directory.tsx       the list, search and filters — the whole product
+src/pages/Directory.tsx       the list, search and filters - the whole product
 src/pages/About.tsx           prose page
 src/components/ui/            unused shadcn scaffold (see "Components")
 ```
@@ -57,7 +57,7 @@ src/components/ui/            unused shadcn scaffold (see "Components")
 ### 1. Data is the source of truth
 
 `src/lib/scholarships.ts` loads every file with
-`import.meta.glob("/data/scholarships/*.json")` — the leading slash resolves from
+`import.meta.glob("/data/scholarships/*.json")` - the leading slash resolves from
 the project root, not `src/`. Entries with `status: "discontinued"` are filtered
 out at load.
 
@@ -74,7 +74,7 @@ window, and sets `projected: true`.
 
 Anything rendered from a `projected` timing must carry the `≈` marker and the
 `copy.directory.projected` tooltip. **Never present a projected date as
-confirmed** — students plan around these.
+confirmed** - students plan around these.
 
 Reuse these rather than reimplementing them: `getTiming`, `compareByUrgency`,
 `groupByDeadlineMonth`, `countOpenNow`, `activeTags`. Each takes a `today`
@@ -91,7 +91,7 @@ component.
   may keep a local `content = { sv, en }` object (see `About.tsx`), but never a
   single-language string.
 - Swedish is the default and the primary voice. Write the Swedish first, then the
-  English — not a translation of a translation.
+  English - not a translation of a translation.
 - Interpolate with `fill(copy.x.y, { count })`, never string concatenation.
 - Format dates, months and amounts with the `Intl` helpers in `i18n.ts`
   (`formatDate`, `monthLabel`, `shortMonth`, `dayOfMonth`, `formatAmount`). Never
@@ -123,19 +123,19 @@ humans. The rules that bite most often:
 
 - `id` must equal the filename without `.json`: lowercase, hyphenated, no Swedish
   characters (`Gålöstiftelsen` → `galostiftelsen`).
-- `url` points at the page a student applies from, as specific as possible — not
+- `url` points at the page a student applies from, as specific as possible - not
   the organisation's front page.
 - `deadline` is `null` only when `recurrence` is `rolling`.
 - `last_verified` is a claim that someone checked the source that day. Update it
   whenever you touch an entry; never bump it without actually checking.
-- A scholarship that stops existing gets `"status": "discontinued"` — **never
+- A scholarship that stops existing gets `"status": "discontinued"` - **never
   delete the file**, or it gets re-added later from a stale list.
 - **Adding a tag is a three-place change in one commit**: the `tags` enum in
   `data/schema.json`, the `tags` blocks for both `sv` and `en` in
   `src/lib/i18n.ts`, and the `Tag` union in `src/lib/scholarships.ts`. The
   validator rejects unknown tags.
 - Never write anything about an individual applicant, and never a private
-  person's contact details — organisational addresses only.
+  person's contact details - organisational addresses only.
 - Never guess a date. `null` beats a plausible invention.
 
 ## Design language
@@ -157,10 +157,10 @@ The palette lives in `src/index.css` as HSL triplets, exposed through
 | `--ink` | `text-ink`, `border-ink` | Body text, and the heavy rule that closes a masthead. |
 | `--ink-soft` | `text-ink-soft` | Secondary text: status lines, notes, meta. |
 | `--ink-faint` | `text-ink-faint` | Tertiary: eyebrows, counts, placeholders, idle icons. |
-| `--rule` | `border-rule` | Hairline dividers between rows — the main structural device. |
+| `--rule` | `border-rule` | Hairline dividers between rows - the main structural device. |
 | `--rule-strong` | `border-rule-strong`, `bg-rule-strong` | Section rules: the search underline, the line beside a month heading. |
 | `--accent-ink` | `text-accentInk`, `border-accentInk` | Links, the active-filter underline, hover state on the row arrow. |
-| `--signal` | `text-signal` | **Urgency only** — a deadline within `URGENT_DAYS` (7). |
+| `--signal` | `text-signal` | **Urgency only** - a deadline within `URGENT_DAYS` (7). |
 | `--wash` | `bg-wash` | The one fill tint, for quiet blocks. |
 
 `--signal` is reserved. If it appears anywhere decorative, that is a bug.
@@ -178,11 +178,11 @@ hardcoded colour silently breaks it.
 
 - **Instrument Serif** (`font-serif`) for display: the masthead, page titles, the
   large day numeral in the date gutter, empty-state lines. It ships regular and
-  italic only — **never** add `font-bold` or `font-medium` to it. Emphasis comes
+  italic only - **never** add `font-bold` or `font-medium` to it. Emphasis comes
   from size.
 - **Inter** (`font-sans`) for everything read in quantity, including scholarship
-  names. The base layer sets `h1`–`h3` to serif, so a heading meant to be sans —
-  like a row title or an eyebrow `h2` — sets `font-sans` explicitly.
+  names. The base layer sets `h1`–`h3` to serif, so a heading meant to be sans -
+  like a row title or an eyebrow `h2` - sets `font-sans` explicitly.
 - `.tnum` on every date, amount, count and countdown, so figures line up down the
   page.
 - `.eyebrow` for small ruled labels: month headings, filter legends, the summary
@@ -209,7 +209,7 @@ hardcoded colour silently breaks it.
   final undated group.
 - Filters read as a legend, not a toolbar: text `Toggle`s that mark the active
   option with an `accentInk` underline. No pill chips, no button bars. The search
-  field is a bare `<input>` under a `border-rule-strong` line — not a boxed input.
+  field is a bare `<input>` under a `border-rule-strong` line - not a boxed input.
 - `--radius` is `0.25rem`. Corners are nearly square; avoid `rounded-lg` and
   larger.
 - **No shadows, no gradients, no filled cards.** Where you want to group things,
@@ -229,7 +229,7 @@ scroll-triggered reveals.
   `focus:outline-none` unless you replace it with something at least as visible.
 - Filter toggles carry `aria-pressed`; the language switch carries `aria-current`;
   icon-only links carry `aria-label`; decorative icons carry `aria-hidden`.
-- Controls that appear on hover must also appear on `focus-visible` — see the
+- Controls that appear on hover must also appear on `focus-visible` - see the
   per-row report link.
 - External links always get `target="_blank" rel="noopener noreferrer"` and a
   visible affordance (an `ArrowUpRight`, or the row's hover underline).
@@ -241,7 +241,7 @@ scroll-triggered reveals.
 
 `src/components/ui/` is shadcn scaffold from the original build and **nothing in
 the app imports it any more**. Don't reach into it out of habit, and don't edit
-those files — the pages are written with plain semantic elements and Tailwind, and
+those files - the pages are written with plain semantic elements and Tailwind, and
 that is the house style. Small page-local components (`Toggle`, `Row`,
 `MonthSection` in `Directory.tsx`) stay in the page file until a second page needs
 them.
@@ -260,7 +260,7 @@ projected date is official.
 
 ## Working conventions
 
-- One concern per pull request. Data changes and code changes stay separate — a
+- One concern per pull request. Data changes and code changes stay separate - a
   data-only PR skips `npm ci` in CI and is the common contributor path.
 - Commit subjects are imperative and sentence case, with no prefix or scope:
   "Drop leftovers from the old landing page", "Rename the project to Svenska

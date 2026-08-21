@@ -15,7 +15,7 @@ Each scholarship is one file at `data/scholarships/<id>.json`. To change one, cl
 
 ### Adding a scholarship
 
-Create `data/scholarships/<id>.json`, where `<id>` is the name in lowercase with hyphens between words and no Swedish characters — `Gålöstiftelsen` becomes `galostiftelsen`.
+Create `data/scholarships/<id>.json`, where `<id>` is the name in lowercase with hyphens between words and no Swedish characters - `Gålöstiftelsen` becomes `galostiftelsen`.
 
 ```json
 {
@@ -37,7 +37,7 @@ Required: `id`, `name`, `url`, `deadline`, `apply_via`, `tags`, `last_verified`.
 | --- | --- |
 | `id` | Must match the filename without `.json`. |
 | `name` | The official name, as the awarding body writes it. |
-| `url` | The page a student applies from — as specific as you can get, not just the organisation's front page. |
+| `url` | The page a student applies from - as specific as you can get, not just the organisation's front page. |
 | `opens` | When the window opens, `YYYY-MM-DD`. Use `null` if not published. |
 | `deadline` | The last day to apply. Only `null` when `recurrence` is `rolling`. |
 | `recurrence` | `annual` if it comes back each year, `rolling` if you can apply any time, `one-off` if it will not return. |
@@ -51,7 +51,7 @@ Required: `id`, `name`, `url`, `deadline`, `apply_via`, `tags`, `last_verified`.
 
 ### Updating an existing scholarship
 
-Change the fields that moved and set `last_verified` to today. If a deadline has passed and the scholarship recurs annually, you do not need to do anything — the site projects the next date. Update it once the awarding body publishes real dates, which is better than a projection.
+Change the fields that moved and set `last_verified` to today. If a deadline has passed and the scholarship recurs annually, you do not need to do anything - the site projects the next date. Update it once the awarding body publishes real dates, which is better than a projection.
 
 ### A scholarship that no longer exists
 
@@ -79,7 +79,7 @@ The validator checks the schema, that ids match filenames, that dates are real a
 
 ## Code changes
 
-Bug fixes and improvements to the site are welcome. Run `npm run lint` and `npm run build` before opening a pull request. Keep the site static — no backend, no accounts, no tracking.
+Bug fixes and improvements to the site are welcome. Run `npm run lint` and `npm run build` before opening a pull request. Keep the site static - no backend, no accounts, no tracking.
 
 ## Licence
 
