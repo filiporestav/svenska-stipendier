@@ -10,6 +10,8 @@ export const translations = {
       directory: "Stipendier",
       about: "Om",
       contribute: "Bidra",
+      openSource: "Öppen källkod",
+      openSourceAria: "Öppen källkod på GitHub",
       openMenu: "Öppna meny",
       closeMenu: "Stäng meny",
     },
@@ -47,6 +49,9 @@ export const translations = {
       contributeTitle: "Saknas något?",
       contributeBody:
         "Vi letar reda på stipendierna själva, så listan blir aldrig helt komplett. Hittar du ett som saknas, eller ett datum som har ändrats, säg till.",
+      contributeOpenSource:
+        "Hela sidan är öppen källkod. Varje stipendium är en fil på GitHub som vem som helst kan rätta, och du behöver inte kunna koda för att göra det.",
+      viewSource: "Se koden och datan",
     },
     phase: {
       open: "Öppna nu",
@@ -99,6 +104,8 @@ export const translations = {
       directory: "Scholarships",
       about: "About",
       contribute: "Contribute",
+      openSource: "Open source",
+      openSourceAria: "Open source on GitHub",
       openMenu: "Open menu",
       closeMenu: "Close menu",
     },
@@ -136,6 +143,9 @@ export const translations = {
       contributeTitle: "Something missing?",
       contributeBody:
         "We find these scholarships ourselves, so the list is never quite complete. If one is missing, or a date has changed, tell us.",
+      contributeOpenSource:
+        "The whole site is open source. Every scholarship is a file on GitHub that anyone can correct, and you do not need to be able to code to do it.",
+      viewSource: "Browse the code and data",
     },
     phase: {
       open: "Open now",

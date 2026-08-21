@@ -1,6 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useLocale } from "@/contexts/locale-context";
 import { Logo } from "@/components/Logo";
+import { GitHubMark } from "@/components/GitHubMark";
 import { Locale, buildLocalePath, stripLocaleFromPath } from "@/lib/i18n";
 import { GITHUB_URL } from "@/lib/site";
 
@@ -34,8 +35,17 @@ export const Navbar = () => {
           <Link to={pathFor("/about")} className={linkClass}>
             {copy.nav.about}
           </Link>
-          <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>
-            GitHub
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={copy.nav.openSourceAria}
+            className={`${linkClass} flex items-center gap-2`}
+          >
+            <GitHubMark className="h-3.5 w-3.5 shrink-0" />
+            {/* The mark carries it on a narrow bar; the words are what tell a
+                student who isn't a developer that the list is theirs to edit. */}
+            <span className="hidden sm:inline">{copy.nav.openSource}</span>
           </a>
           <div className="flex items-center gap-1.5 font-mono text-[0.6875rem] uppercase tracking-[0.16em]">
             {(["sv", "en"] as const).map((option, index) => (

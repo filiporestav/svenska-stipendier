@@ -19,7 +19,8 @@ import {
   groupByDeadlineMonth,
   scholarships,
 } from "@/lib/scholarships";
-import { NEW_SCHOLARSHIP_URL, reportUrl } from "@/lib/site";
+import { GITHUB_URL, NEW_SCHOLARSHIP_URL, reportUrl } from "@/lib/site";
+import { GitHubMark } from "@/components/GitHubMark";
 
 /** Below this many days, a deadline is worth shouting about. */
 const URGENT_DAYS = 7;
@@ -380,15 +381,29 @@ const Directory = () => {
         <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-soft">
           {copy.directory.contributeBody}
         </p>
-        <a
-          href={NEW_SCHOLARSHIP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="eyebrow mt-5 inline-flex items-center gap-2 bg-ink px-3 py-2 text-paper transition-opacity hover:opacity-80"
-        >
-          {copy.footer.addScholarship}
-          <span aria-hidden="true">&#8599;</span>
-        </a>
+        <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-soft">
+          {copy.directory.contributeOpenSource}
+        </p>
+        <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3">
+          <a
+            href={NEW_SCHOLARSHIP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="eyebrow inline-flex items-center gap-2 bg-ink px-3 py-2 text-paper transition-opacity hover:opacity-80"
+          >
+            {copy.footer.addScholarship}
+            <span aria-hidden="true">&#8599;</span>
+          </a>
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="eyebrow inline-flex items-center gap-2 text-ink-soft transition-colors hover:text-ink"
+          >
+            <GitHubMark className="h-3.5 w-3.5 shrink-0" />
+            {copy.directory.viewSource}
+          </a>
+        </div>
       </aside>
     </main>
   );

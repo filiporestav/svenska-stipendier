@@ -1,4 +1,5 @@
 import { useLocale } from "@/contexts/locale-context";
+import { GitHubMark } from "@/components/GitHubMark";
 import { CONTRIBUTING_URL, GITHUB_URL, NEW_SCHOLARSHIP_URL } from "@/lib/site";
 
 /**
@@ -9,9 +10,9 @@ export const Footer = () => {
   const { copy } = useLocale();
 
   const links = [
-    { href: GITHUB_URL, label: copy.footer.sourceCode },
-    { href: NEW_SCHOLARSHIP_URL, label: copy.footer.addScholarship },
-    { href: CONTRIBUTING_URL, label: copy.nav.contribute },
+    { href: GITHUB_URL, label: copy.footer.sourceCode, mark: true },
+    { href: NEW_SCHOLARSHIP_URL, label: copy.footer.addScholarship, mark: false },
+    { href: CONTRIBUTING_URL, label: copy.nav.contribute, mark: false },
   ];
 
   return (
@@ -34,8 +35,9 @@ export const Footer = () => {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="eyebrow text-boardInk/70 transition-colors hover:text-boardInk"
+              className="eyebrow inline-flex items-center gap-2 text-boardInk/70 transition-colors hover:text-boardInk"
             >
+              {link.mark && <GitHubMark className="h-3.5 w-3.5 shrink-0" />}
               {link.label}
             </a>
           ))}
