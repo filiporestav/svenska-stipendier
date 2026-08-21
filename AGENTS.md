@@ -250,14 +250,6 @@ opportunities". State what is known, mark what is estimated, and say plainly whe
 something is unverified. Never imply a scholarship is likely to be won, or that a
 projected date is official.
 
-## Loose ends
-
-Cleanup that is welcome in any PR that touches the area:
-
-- `.claude/settings.local.json` holds a long allowlist left over from the Supabase
-  build, including credentials for services this project no longer uses. It wants
-  truncating, not extending.
-
 ## Working conventions
 
 - One concern per pull request. Data changes and code changes stay separate — a
