@@ -10,9 +10,9 @@
     "kth",
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Resestipendier ur EECS-skolans stiftelser. Endast för KTH-studenter.",
-    "en": "Travel scholarships from the EECS school's foundations. KTH students only."
-  }
+    "sv": "Resestipendier ur EECS-skolans stiftelser Engbloms och Malmes. Endast för KTH-studenter. Utlysningen görs på studentwebben och kräver KTH-inloggning.",
+    "en": "Travel scholarships from the EECS school's Engblom and Malm foundations. KTH students only. The call is published on the student web and requires a KTH login."
+  },
+  "last_verified": "2026-08-21"
 }

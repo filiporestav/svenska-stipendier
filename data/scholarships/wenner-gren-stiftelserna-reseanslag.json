@@ -3,12 +3,16 @@
   "name": "Wenner-Gren Stiftelserna – Reseanslag",
   "url": "https://www.swgc.org/reseanslag",
   "opens": null,
-  "deadline": "2025-10-01",
+  "deadline": "2026-10-01",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "forskning",
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För disputerade forskare verksamma i Sverige vars doktorsexamen inte är äldre än sju år. Avser kortare aktivt deltagande i internationella konferenser, symposier, workshoppar och kurser utomlands – inte forskningsvistelser. Två ansökningstillfällen per år, 10 mars och 1 oktober.",
+    "en": "For researchers with a doctorate working in Sweden whose PhD is no more than seven years old. Covers short periods of active participation in international conferences, symposia, workshops and courses abroad — not research stays. Two rounds a year, 10 March and 1 October."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -9,10 +9,9 @@
   "tags": [
     "kth"
   ],
-  "last_verified": "2026-07-27",
-  "typical_amount_sek": 64000,
   "notes": {
-    "sv": "Endast för KTH-studenter.",
-    "en": "KTH students only."
-  }
+    "sv": "Endast för KTH-studenter från årskurs 3 på civilingenjörs- eller högskoleingenjörsprogram med mycket goda studieresultat; alla obligatoriska kurser i årskurs 1–2 ska vara godkända. Stipendierna låg föregående år mellan 15 000 och 65 000 kr. Utlysningssidan kräver KTH-inloggning.",
+    "en": "KTH students from year 3 of an engineering programme with very good results only; all compulsory courses in years 1–2 must be passed. Awards ranged from SEK 15,000 to 65,000 in the previous year. The call page requires a KTH login."
+  },
+  "last_verified": "2026-08-21"
 }

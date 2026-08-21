@@ -6,8 +6,14 @@
   "deadline": "2025-10-31",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 5000,
   "tags": [
-    "foretagsstipendium"
+    "foretagsstipendium",
+    "examensarbete"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För dig som skriver kandidat-, magister- eller masteruppsats vid svenskt lärosäte och bidrar till ökad förståelse för privatekonomi. Två stipendier om 5 000 kr delas ut per år.",
+    "en": "For a bachelor's or master's thesis at a Swedish university that contributes to a better understanding of personal finance. Two awards of SEK 5,000 are made each year."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -3,11 +3,19 @@
   "name": "Mystep Stipendium",
   "url": "https://www.mystep.se/stipendium",
   "opens": null,
-  "deadline": "2025-10-31",
+  "deadline": "2026-10-31",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "info@becksolutions.se",
+  "typical_amount_sek": 5000,
   "tags": [
-    "foretagsstipendium"
+    "foretagsstipendium",
+    "examensarbete",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För dig som studerar utomlands eller skriver C- eller D-uppsats inom ekonomi vid svenskt lärosäte. Två ansökningstillfällen per år, 31 oktober och 30 april. Ansökan mailas in.",
+    "en": "For students studying abroad or writing a C- or D-level thesis in economics at a Swedish university. Two rounds a year, 31 October and 30 April. Applications are emailed."
+  },
+  "last_verified": "2026-08-21"
 }

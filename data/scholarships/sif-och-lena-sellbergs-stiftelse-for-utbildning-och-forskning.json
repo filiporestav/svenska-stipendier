@@ -7,7 +7,12 @@
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "forskning"
+    "forskning",
+    "kvinnor"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Söks via portalen stiftelseansokan.se. Ger bidrag till undervisning och utbildning och främjar vetenskaplig forskning; kvinnor prioriteras.",
+    "en": "Applied for through the stiftelseansokan.se portal. Gives grants for teaching and education and promotes scientific research; women are given preference."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -3,12 +3,17 @@
   "name": "Ericssons Forskningsstiftelse",
   "url": "https://www.ericsson.com/sv/om-oss/company-facts/ericsson-worldwide/sweden/ericsson-research-foundation",
   "opens": null,
-  "deadline": "2026-02-21",
+  "deadline": "2026-02-20",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "forskning",
-    "foretagsstipendium"
+    "foretagsstipendium",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Formellt Lars Magnus Ericssons stiftelse för främjande av elektroteknisk forskning. Doktorander och nyligen disputerade vid svenska lärosäten kan söka bidrag för forskningsvistelse utomlands eller konferensdeltagande inom elektroteknik.",
+    "en": "Formally the Lars Magnus Ericsson foundation for electrical engineering research. Doctoral students and recent PhDs at Swedish universities may apply for research visits abroad or conference attendance in electrical engineering."
+  },
+  "last_verified": "2026-08-21"
 }

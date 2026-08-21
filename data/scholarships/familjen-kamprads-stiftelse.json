@@ -1,7 +1,7 @@
 {
   "id": "familjen-kamprads-stiftelse",
   "name": "Familjen Kamprads Stiftelse",
-  "url": "https://familjenkampradsstiftelse.se/",
+  "url": "https://familjenkampradsstiftelse.se/ansok/",
   "opens": "2025-09-02",
   "deadline": "2025-12-01",
   "recurrence": "annual",
@@ -9,5 +9,9 @@
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Utlysningarna riktar sig till svenska lärosäten och forskningsinstitut, och till ideella föreningar i Småland – inte till enskilda studenter. Forskningsanslagen öppnar första tisdagen i september.",
+    "en": "The calls address Swedish universities and research institutes, and non-profit associations in Småland — not individual students. The research call opens on the first Tuesday in September."
+  },
+  "last_verified": "2026-08-21"
 }

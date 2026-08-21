@@ -1,18 +1,17 @@
 {
   "id": "marianne-och-marcus-wallenbergs-stiftelse",
   "name": "Marianne och Marcus Wallenbergs Stiftelse",
-  "url": "https://mmw.wallenberg.org/projekt/wasp-hs-forskning-om-ai-teknik-manniska-och-samhalle",
+  "url": "https://mmw.wallenberg.org/anslagsguide",
   "opens": "2026-03-01",
   "deadline": "2026-04-01",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "forskning",
-    "ai"
+    "forskning"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Riktat mot AI-forskning.",
-    "en": "Aimed at AI research."
-  }
+    "sv": "Stödjer vetenskaplig forskning och utbildning inom samhällsvetenskaperna. Ansökningar tas emot från lärosäten, akademier och liknande institutioner – inte från enskilda. Ansökan 1 mars–1 april.",
+    "en": "Supports scientific research and education in the social sciences. Applications are accepted from universities, academies and similar institutions — not from individuals. Applications 1 March–1 April."
+  },
+  "last_verified": "2026-08-21"
 }

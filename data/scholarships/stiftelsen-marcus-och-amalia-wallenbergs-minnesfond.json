@@ -1,7 +1,7 @@
 {
   "id": "stiftelsen-marcus-och-amalia-wallenbergs-minnesfond",
   "name": "Stiftelsen Marcus och Amalia Wallenbergs Minnesfond",
-  "url": "https://maw.wallenberg.org/beviljade-anslag",
+  "url": "https://maw.wallenberg.org/anslagsguide",
   "opens": "2026-03-01",
   "deadline": "2026-04-01",
   "recurrence": "annual",
@@ -9,5 +9,9 @@
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Stödjer främst vetenskaplig forskning och utbildning inom humaniora. Ansökningar tas emot från lärosäten, akademier och liknande institutioner – stiftelsen ger inte anslag till enskilda. Ansökan 1 mars–1 april.",
+    "en": "Supports mainly scientific research and education in the humanities. Applications are accepted from universities, academies and similar institutions — the foundation does not award grants to individuals. Applications 1 March–1 April."
+  },
+  "last_verified": "2026-08-21"
 }

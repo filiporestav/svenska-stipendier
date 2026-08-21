@@ -6,10 +6,13 @@
   "deadline": "2026-03-01",
   "recurrence": "annual",
   "apply_via": "website",
+  "report_required": true,
   "tags": [
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
-  "report_required": true,
-  "typical_amount_sek": 10000
+  "notes": {
+    "sv": "Gäller gymnasieelever i Stockholms län samt eftergymnasiala studier utomlands inom teknik, naturvetenskap, musik, konst och design. Två ansökningsperioder per år: 1 januari–1 mars och 1 juli–1 september. För masterstudier utomlands beviljas 50 000–100 000 kr.",
+    "en": "For upper-secondary pupils in Stockholm County and for post-secondary studies abroad in technology, science, music, art and design. Two application windows a year: 1 January–1 March and 1 July–1 September. Master's studies abroad receive SEK 50,000–100,000."
+  },
+  "last_verified": "2026-08-21"
 }

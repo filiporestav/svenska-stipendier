@@ -2,17 +2,17 @@
   "id": "stiftelsen-aaa",
   "name": "Stiftelsen AAA",
   "url": "https://stiftelsenaaa.proofx.se/hO6XZzFhVsgDtSzAX6cqoA/",
-  "opens": "2026-08-01",
+  "opens": "2026-09-01",
   "deadline": "2026-09-30",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 20000,
   "tags": [
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
-  "typical_amount_sek": 20000,
   "notes": {
-    "sv": "Stödjer studenter med merkostnader i studierna, till exempel utlandsstudier.",
-    "en": "Supports students with extra study costs, such as studying abroad."
-  }
+    "sv": "Underlättar ekonomiskt för unga att studera. Riktar sig till dig som bedriver eftergymnasiala heltidsstudier och har merkostnader, till exempel utlandsstudier. Ansökan är öppen 1–30 september och görs i ett webbformulär med studieintyg, personligt brev, budget och CV.",
+    "en": "Eases the cost of study for young people. Aimed at full-time post-secondary students with extra costs, such as studying abroad. Applications are open 1–30 September through a web form, with proof of enrolment, a personal letter, a budget and a CV."
+  },
+  "last_verified": "2026-08-21"
 }

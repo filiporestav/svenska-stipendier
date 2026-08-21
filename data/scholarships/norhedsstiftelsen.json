@@ -1,17 +1,17 @@
 {
   "id": "norhedsstiftelsen",
-  "name": "Norhedsstiftelsen",
+  "name": "Syskonen Inger och Sixten Norheds Stiftelse",
   "url": "https://norhedsstiftelse.se/",
-  "opens": "2026-01-01",
-  "deadline": "2026-01-31",
-  "recurrence": "annual",
+  "opens": null,
+  "deadline": null,
+  "recurrence": "rolling",
   "apply_via": "website",
   "tags": [
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Stipendium för utlandsstudier.",
-    "en": "Scholarship for studying abroad."
-  }
+    "sv": "Stipendier för utlandsstudier kan sökas under hela året. Stiftelsen lämnar även bidrag till behövande.",
+    "en": "Scholarships for studies abroad can be applied for throughout the year. The foundation also gives support grants to people in need."
+  },
+  "last_verified": "2026-08-21"
 }

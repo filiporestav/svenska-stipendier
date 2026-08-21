@@ -6,12 +6,14 @@
   "deadline": "2026-01-20",
   "recurrence": "annual",
   "apply_via": "email",
+  "apply_email": "kansliet@siju.se",
+  "typical_amount_sek": 30000,
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Kontakta kansliet via e-postadressen på hemsidan.",
-    "en": "Contact the office at the email address given on their website."
-  }
+    "sv": "SIJU är Svenska föreningen för IT och juridik. Bidraget avser spridande av forskningsresultat inom juridik och IT och kan sökas av både institutioner och enskilda, med högst 30 000 kr per sökande och år. Föreningen delar även ut stipendier för bästa examensarbete och för konferensdeltagande.",
+    "en": "SIJU is the Swedish association for IT and law. The grant is for disseminating research results in law and IT and is open to both institutions and individuals, up to SEK 30,000 per applicant and year. The association also awards prizes for best degree project and for conference attendance."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -6,8 +6,12 @@
   "deadline": "2026-03-31",
   "recurrence": "annual",
   "apply_via": "website",
-  "tags": [],
-  "last_verified": "2026-07-27",
   "report_required": true,
-  "typical_amount_sek": 8700
+  "typical_amount_sek": 8700,
+  "tags": [],
+  "notes": {
+    "sv": "Främjar barns och ungdomars fostran och utbildning samt vård av behövande äldre, sjuka eller funktionsnedsatta. Studerande kan söka till och med 25 års ålder. Förvaltas av Handelsbanken Stiftelsetjänst.",
+    "en": "Promotes the upbringing and education of children and young people, and care for elderly, ill or disabled people in need. Students may apply up to the age of 25. Administered by Handelsbanken Stiftelsetjänst."
+  },
+  "last_verified": "2026-08-21"
 }

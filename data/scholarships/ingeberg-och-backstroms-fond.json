@@ -1,6 +1,6 @@
 {
   "id": "ingeberg-och-backstroms-fond",
-  "name": "Ingeberg och Bäckströms Fond",
+  "name": "Ingeborg och Henric Bäckströms fond",
   "url": "https://karlstad.se/karlstads-kommunala-gymnasieskolor/allman-information-om-gymnasiet/ekonomi-och-studiebidrag/stipendier",
   "opens": "2026-04-14",
   "deadline": "2026-05-25",
@@ -9,5 +9,9 @@
   "tags": [
     "region"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För universitets- och högskolestudenter med gymnasieexamen från Karlstad som inte studerar handel, fria yrken eller textilslöjd och som uppfyller fondens inkomstkrav. Ansökan görs via Karlstads kommuns e-tjänst och öppnar under senare delen av vårterminen.",
+    "en": "For university students with an upper-secondary diploma from Karlstad who are not studying commerce, the liberal professions or textile crafts, and who meet the fund's income conditions. Applications go through Karlstad municipality's e-service and open in the later part of the spring term."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -3,9 +3,15 @@
   "name": "Stiftelsen Folke Bernadottes Minnesfond",
   "url": "https://www.folkebernadottesminnesfond.se/",
   "opens": null,
-  "deadline": "2025-09-15",
+  "deadline": "2026-09-15",
   "recurrence": "annual",
   "apply_via": "website",
-  "tags": [],
-  "last_verified": "2026-07-27"
+  "tags": [
+    "internationellt"
+  ],
+  "notes": {
+    "sv": "För dig mellan 11 och 25 år som är bosatt i Sverige, och för ledare under 26 år. Stödjer internationellt ungdomsutbyte, läger utomlands, volontärresor på minst åtta veckor och digitala utbyten. Två ansökningstillfällen per år, 15 februari och 15 september.",
+    "en": "For applicants aged 11–25 resident in Sweden, and for leaders under 26. Supports international youth exchange, camps abroad, volunteer trips of at least eight weeks and digital exchanges. Two rounds a year, 15 February and 15 September."
+  },
+  "last_verified": "2026-08-21"
 }

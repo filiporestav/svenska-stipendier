@@ -3,15 +3,16 @@
   "name": "Sparbanksstiftelsen Skaraborg",
   "url": "https://www.sparbankenskaraborg.se/om-oss/sparbanksstiftelsen-skaraborg/stipendier.html",
   "opens": null,
-  "deadline": "2025-09-30",
+  "deadline": "2026-09-30",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 10000,
   "tags": [
     "region"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Öppnar igen med sista ansökningsdag 31 mars.",
-    "en": "Reopens with a 31 March deadline."
-  }
+    "sv": "Utvecklingsstipendier till personer från 16 år som bor i eller har nära anknytning till Skara, Vara, Götene eller Essunga, inom idrott eller kultur. Två ansökningstillfällen per år, 31 mars och 30 september. Enskilda får 10 000 kr och föreningar 25 000 kr.",
+    "en": "Development scholarships for people aged 16 and over living in or closely connected to Skara, Vara, Götene or Essunga, in sport or culture. Two rounds a year, 31 March and 30 September. Individuals receive SEK 10,000 and associations SEK 25,000."
+  },
+  "last_verified": "2026-08-21"
 }

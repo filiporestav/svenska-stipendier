@@ -3,9 +3,13 @@
   "name": "Stiftelsen SKAPA",
   "url": "https://www.stiftelsenskapa.se/",
   "opens": null,
-  "deadline": "2025-09-15",
+  "deadline": "2026-09-15",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Priser och stipendier till uppfinnare och innovatörer, bland annat SKAPA-priset på 500 000 kr och SKAPA-talang för unga innovatörer på 50 000–125 000 kr. Kategorierna har olika ansökningstider.",
+    "en": "Prizes and scholarships for inventors and innovators, including the SKAPA prize of SEK 500,000 and SKAPA-talang for young innovators at SEK 50,000–125,000. The categories have different application periods."
+  },
+  "last_verified": "2026-08-21"
 }

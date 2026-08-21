@@ -8,11 +8,12 @@
   "apply_via": "website",
   "tags": [
     "examensarbete",
+    "kultur",
     "region"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Kan sökas för examensarbete inom alla ämnen.",
-    "en": "Can be applied for a degree project in any subject."
-  }
+    "sv": "Studiestöd till begåvade unga med behov, för utbildning till ett konstnärligt yrke eller för att genomföra ett examensarbete inom alla ämnen. Medlen får inte användas till grundutbildning som staten eller kommunen ansvarar för. Ansökan 1 januari–30 april via Göteborgs Stads stiftelseportal.",
+    "en": "Study support for gifted young people in need, for training towards an artistic profession or for carrying out a degree project in any subject. The funds may not be used for basic education that the state or municipality is responsible for. Applications 1 January–30 April through the City of Gothenburg's foundation portal."
+  },
+  "last_verified": "2026-08-21"
 }

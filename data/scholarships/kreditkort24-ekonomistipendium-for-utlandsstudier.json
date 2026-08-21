@@ -2,14 +2,19 @@
   "id": "kreditkort24-ekonomistipendium-for-utlandsstudier",
   "name": "Kreditkort24 – Ekonomistipendium för utlandsstudier",
   "url": "https://kreditkort24.se/stipendium/",
-  "opens": "2025-05-01",
-  "deadline": "2025-12-31",
+  "opens": "2026-01-14",
+  "deadline": "2026-12-31",
   "recurrence": "annual",
   "apply_via": "email",
+  "apply_email": "info@kreditkort24.se",
+  "typical_amount_sek": 7000,
   "tags": [
     "foretagsstipendium",
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
-  "apply_email": "info@kreditkort24.se"
+  "notes": {
+    "sv": "För ekonomistudenter vid svenskt lärosäte som studerar eller ska studera utomlands. Ansökan mailas med en presentation på högst 300 ord.",
+    "en": "For economics students at a Swedish university who are studying or about to study abroad. Applications are emailed with a presentation of at most 300 words."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -6,6 +6,12 @@
   "deadline": "2026-01-15",
   "recurrence": "annual",
   "apply_via": "website",
-  "tags": [],
-  "last_verified": "2026-07-27"
+  "tags": [
+    "utlandsstudier"
+  ],
+  "notes": {
+    "sv": "För dig under 32 med akademisk examen om minst 180 hp eller motsvarande praktisk utbildning, som ska bedriva självständiga teoretiska eller praktiska studier främst utomlands. Ansökan öppnar i början av november och stänger i mitten av januari; besked i maj.",
+    "en": "For applicants under 32 with a degree of at least 180 credits or equivalent practical training, for independent theoretical or practical studies primarily abroad. Applications open in early November and close in mid-January; decisions in May."
+  },
+  "last_verified": "2026-08-21"
 }

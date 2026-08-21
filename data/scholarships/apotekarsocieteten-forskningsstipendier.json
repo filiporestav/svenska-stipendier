@@ -2,12 +2,18 @@
   "id": "apotekarsocieteten-forskningsstipendier",
   "name": "Apotekarsocieteten – Forskningsstipendier",
   "url": "https://www.apotekarsocieteten.se/stipendier-och-priser/stipendier/forskningsstipendier/",
-  "opens": "2025-09-01",
-  "deadline": "2025-10-31",
+  "opens": "2026-09-01",
+  "deadline": "2026-10-31",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "forskning"
+    "forskning",
+    "examensarbete",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För doktorander och disputerade forskare (kurser, konferenser, forskningsvistelser och postdoc) samt för grundutbildningsstudenter som gör examensarbete utomlands inom farmaceutisk vetenskap. Medlemmar prioriteras.",
+    "en": "For doctoral students and researchers (courses, conferences, research visits and postdocs) and for undergraduates doing a degree project abroad in the pharmaceutical sciences. Members are given preference."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -2,20 +2,20 @@
   "id": "karl-engvers-stiftelse-examensarbete-utomlands-kth",
   "name": "Karl Engvers Stiftelse – Examensarbete utomlands (KTH)",
   "url": "https://www.kth.se/student/stod/studier/stipendier/stipendieutlysningar/stipendier-ur-karl-engvers-stiftelse-for-studenter-vid-kth-som-ska-genomfora-sitt-examensarbete-utomlands-1.1188126",
-  "opens": "2025-10-01",
-  "deadline": "2025-10-31",
+  "opens": "2026-10-01",
+  "deadline": "2026-10-31",
   "recurrence": "annual",
   "apply_via": "website",
+  "report_required": true,
+  "typical_amount_sek": 20000,
   "tags": [
     "kth",
     "examensarbete",
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
-  "report_required": true,
-  "typical_amount_sek": 20000,
   "notes": {
-    "sv": "Endast för KTH-studenter som gör examensarbete utomlands. Handläggning tar cirka två månader.",
-    "en": "KTH students doing their degree project abroad only. Processing takes about two months."
-  }
+    "sv": "Endast för KTH-studenter som ska genomföra sitt examensarbete utomlands. Ansökan 1–31 oktober. Utlysningssidan kräver KTH-inloggning.",
+    "en": "KTH students carrying out their degree project abroad only. Applications 1–31 October. The call page requires a KTH login."
+  },
+  "last_verified": "2026-08-21"
 }

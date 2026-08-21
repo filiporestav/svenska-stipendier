@@ -6,8 +6,12 @@
   "deadline": "2026-04-01",
   "recurrence": "annual",
   "apply_via": "website",
-  "tags": [],
-  "last_verified": "2026-07-27",
   "report_required": true,
-  "typical_amount_sek": 20000
+  "typical_amount_sek": 20000,
+  "tags": [],
+  "notes": {
+    "sv": "Söks via portalen stiftelseansokan.se. Ändamålet är stipendier för studier och stöd till behövande, men stiftelsen vänder sig numera främst till organisationer snarare än enskilda sökande.",
+    "en": "Applied for through the stiftelseansokan.se portal. Its purpose is scholarships for studies and support for those in need, but the foundation now addresses organisations rather than individual applicants."
+  },
+  "last_verified": "2026-08-21"
 }

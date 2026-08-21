@@ -6,12 +6,13 @@
   "deadline": "2026-01-15",
   "recurrence": "annual",
   "apply_via": "website",
+  "report_required": true,
   "tags": [
     "kvinnor"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Söks av kvinnor.",
-    "en": "Open to women."
-  }
+    "sv": "För kvinnor som visar särskild förmåga och drivkraft och ska genomgå en specialiserad utbildning, gärna inom områden av betydelse för andra kvinnor. Ansökan 1 november–15 januari; lägsta sökbara belopp är 30 000 kr. Stipendiet ska redovisas senast 1 september året efter.",
+    "en": "For women who show exceptional ability and drive and are undertaking specialised education, preferably in fields of significance to other women. Applications 1 November–15 January; the minimum amount that can be requested is SEK 30,000. Recipients must report by 1 September the following year."
+  },
+  "last_verified": "2026-08-21"
 }

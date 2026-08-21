@@ -5,14 +5,15 @@
   "opens": null,
   "deadline": "2026-09-12",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "info@mindoktor.se",
+  "typical_amount_sek": 10000,
   "tags": [
     "examensarbete"
   ],
-  "last_verified": "2026-08-21",
-  "typical_amount_sek": 10000,
   "notes": {
-    "sv": "För bästa uppsats på kandidat-, magister- eller masternivå om digital vård och omsorg vid ett svenskt lärosäte.",
-    "en": "For the best bachelor's, magister or master's thesis on digital healthcare at a Swedish institution."
-  }
+    "sv": "För kandidat-, magister- eller masteruppsats om digital vård och omsorg, framlagd vid ett svenskt lärosäte under föregående läsår. Uppsatsen mailas in som PDF med en sammanfattning på högst 2 000 tecken. Beloppet delas lika mellan medförfattare.",
+    "en": "For a bachelor's or master's thesis on digital healthcare presented at a Swedish university during the previous academic year. The thesis is emailed as a PDF with a summary of at most 2,000 characters. The amount is split equally between co-authors."
+  },
+  "last_verified": "2026-08-21"
 }

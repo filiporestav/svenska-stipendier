@@ -2,12 +2,17 @@
   "id": "c-e-wikstroms-minnesfond",
   "name": "C E Wikströms Minnesfond",
   "url": "https://www.skr.org/kristen-tro/kyrkorna/frikyrkor/frifo-frikyrkliga-forskningsradet/c-e-wikstroms-minnesfond/",
-  "opens": "2025-10-01",
-  "deadline": "2025-12-01",
+  "opens": "2026-10-01",
+  "deadline": "2026-12-01",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "frifo@ehs.se",
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Stödjer vetenskaplig forskning och studier samt vård av barn, unga och äldre. Separata blanketter för forskare och studerande. Ansökan mailas senast 1 december; besked i mitten av mars.",
+    "en": "Supports scientific research and studies, and the care of children, young people and the elderly. Separate forms for researchers and students. Applications are emailed by 1 December; decisions in mid-March."
+  },
+  "last_verified": "2026-08-21"
 }

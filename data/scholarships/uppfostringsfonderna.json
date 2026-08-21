@@ -6,6 +6,11 @@
   "deadline": "2026-03-31",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 35000,
   "tags": [],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Stiftelserna Telefondirektören H.T. Cedergrens uppfostringsfond och Harald och Fanny Zetterbergs uppfostringsfond. Behovsprövat mot sökandens och föräldrarnas ekonomi. Kan sökas från årskurs 9 och upp till cirka 28 års ålder: 35 000 kr per termin för eftergymnasiala studier och 17 500 kr per termin för gymnasiestudier.",
+    "en": "The Telefondirektören H.T. Cedergren and Harald and Fanny Zetterberg education funds. Means-tested against the applicant's and their parents' finances. Open from year 9 of school up to roughly age 28: SEK 35,000 per term for post-secondary study and SEK 17,500 per term for upper-secondary study."
+  },
+  "last_verified": "2026-08-21"
 }

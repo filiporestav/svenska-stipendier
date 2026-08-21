@@ -7,7 +7,11 @@
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "forskning"
+    "region"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Riktar sig i första hand till gymnasieelever i årskurs 2–3 i Stockholm som är studiebegåvade och har en ekonomiskt besvärlig situation. Ulrika Eklunds Stiftelse stödjer även personer med MS eller diabetes.",
+    "en": "Aimed mainly at upper-secondary pupils in years 2–3 in Stockholm who are academically able and in financial difficulty. Ulrika Eklunds Stiftelse also supports people with MS or diabetes."
+  },
+  "last_verified": "2026-08-21"
 }

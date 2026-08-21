@@ -2,14 +2,15 @@
   "id": "marta-christina-och-magnus-vahlquists-stiftelse",
   "name": "Märta Christina och Magnus Vahlquists Stiftelse",
   "url": "https://stiftelsemedel.se/marta-christina-och-magnus-vahlquists-stiftelse/",
-  "opens": "2025-10-01",
-  "deadline": "2026-03-01",
+  "opens": null,
+  "deadline": "2026-09-01",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "MCMVS@soderbergpartners.se",
   "tags": [],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Öppnar för ansökningar igen i april.",
-    "en": "Reopens for applications in April."
-  }
+    "sv": "Två ansökningstillfällen per år: före 1 mars och före 1 september. Stödjer humanitär verksamhet, kultur och konst, vetenskaplig forskning – särskilt medicinsk – kulturarvsvård samt ungdomars utbildning. Ansökan mailas som en sammanfattning på högst en A4.",
+    "en": "Two application rounds a year: before 1 March and before 1 September. Supports humanitarian work, culture and the arts, scientific research — especially medical — heritage conservation and youth education. Applications are emailed as a summary of at most one A4 page."
+  },
+  "last_verified": "2026-08-21"
 }

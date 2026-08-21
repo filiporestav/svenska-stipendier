@@ -7,13 +7,13 @@
   "recurrence": "annual",
   "apply_via": "email",
   "apply_email": "hej@sfkh.se",
+  "typical_amount_sek": 5000,
   "tags": [
     "examensarbete"
   ],
-  "last_verified": "2026-08-21",
-  "typical_amount_sek": 5000,
   "notes": {
     "sv": "För kandidat- eller masteruppsats som berör kroppslig hälsa. Ansökan är öppen året runt utom veckan före 1 juni, då vinnaren utses.",
     "en": "For a bachelor's or master's thesis touching on physical health. Open year-round except the week before 1 June, when the winner is announced."
-  }
+  },
+  "last_verified": "2026-08-21"
 }

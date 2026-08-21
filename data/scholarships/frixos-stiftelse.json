@@ -7,5 +7,9 @@
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Stipendium till entreprenörer med idéer som bidrar till ett hållbart samhälle. Tidigare stipendier har legat mellan 45 000 och 100 000 kr. Ansökningsdatum publiceras på stiftelsens webbplats.",
+    "en": "A scholarship for entrepreneurs whose ideas contribute to a sustainable society. Past awards have ranged from SEK 45,000 to 100,000. Application dates are published on the foundation's website."
+  },
+  "last_verified": "2026-08-21"
 }

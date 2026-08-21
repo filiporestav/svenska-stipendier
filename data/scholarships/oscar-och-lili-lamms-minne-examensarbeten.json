@@ -1,17 +1,18 @@
 {
   "id": "oscar-och-lili-lamms-minne-examensarbeten",
   "name": "Oscar och Lili Lamms Minne – Examensarbeten",
-  "url": "https://stiftelsenlamm.a.se/examensarbetemasters-degree-projects",
-  "opens": "2025-08-15",
-  "deadline": "2025-10-15",
+  "url": "https://stiftelsenlamm.a.se/",
+  "opens": "2026-08-15",
+  "deadline": "2026-10-15",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 10000,
   "tags": [
     "examensarbete"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Finns särskilt för masterprojekt.",
-    "en": "Has a dedicated track for master's projects."
-  }
+    "sv": "Stipendier för examensarbeten på masternivå inom svensk naturvård: markvård, vattenvård, landskapsvård och växtskydd. Två ansökningsperioder per år med deadline 15 april och 15 oktober; två arbeten beviljas 10 000 kr vardera.",
+    "en": "Grants for master's-level degree projects in Swedish nature conservation: soil, water and landscape conservation and plant protection. Two windows a year with deadlines 15 April and 15 October; two projects receive SEK 10,000 each."
+  },
+  "last_verified": "2026-08-21"
 }

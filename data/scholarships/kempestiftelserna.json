@@ -3,11 +3,15 @@
   "name": "Kempestiftelserna",
   "url": "https://www.kempe.com/",
   "opens": null,
-  "deadline": "2025-09-19",
+  "deadline": "2026-09-23",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Forskningsanslag till forskare vid Umeå universitet, Luleå tekniska universitet och SLU i Umeå. Sökande av personliga studie- eller resebidrag hänvisas till andra stipendiefonder.",
+    "en": "Research grants for researchers at Umeå University, Luleå University of Technology and SLU in Umeå. Applicants for personal study or travel grants are referred to other scholarship funds."
+  },
+  "last_verified": "2026-08-21"
 }

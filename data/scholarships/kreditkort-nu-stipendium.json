@@ -3,11 +3,17 @@
   "name": "Kreditkort.nu Stipendium",
   "url": "https://www.kreditkort.nu/stipendium",
   "opens": null,
-  "deadline": "2025-12-31",
+  "deadline": "2026-12-31",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 5000,
   "tags": [
-    "foretagsstipendium"
+    "foretagsstipendium",
+    "examensarbete"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För C- eller D-uppsats inom ekonomi, helst om privatekonomi, kreditkort eller framtidens betallösningar. Delas ut två gånger per år via ett formulär på webbplatsen.",
+    "en": "For a C- or D-level thesis in economics, preferably on personal finance, credit cards or future payment solutions. Awarded twice a year through a form on the website."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -2,13 +2,19 @@
   "id": "blueberry-stipendium-for-studier-utomlands",
   "name": "Blueberry – Stipendium för studier utomlands",
   "url": "https://www.blueberry.nu/blueberrys-stipendium-for-studier-utomlands/",
-  "opens": "2026-03-01",
-  "deadline": "2026-05-01",
+  "opens": null,
+  "deadline": "2026-11-30",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "marketing@blueberry.nu",
+  "typical_amount_sek": 10000,
   "tags": [
     "foretagsstipendium",
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För svenska medborgare som sökt till en skola utomlands via Blueberry. Ansökan mailas med ett brev om skolval, studiemål och ekonomisk situation. Vinnaren utses 15 december.",
+    "en": "For Swedish citizens who applied to a school abroad through Blueberry. Applications are emailed with a letter on the choice of school, study goals and financial situation. The winner is announced on 15 December."
+  },
+  "last_verified": "2026-08-21"
 }

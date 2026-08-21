@@ -6,6 +6,12 @@
   "deadline": "2026-04-30",
   "recurrence": "annual",
   "apply_via": "website",
-  "tags": [],
-  "last_verified": "2026-07-27"
+  "tags": [
+    "region"
+  ],
+  "notes": {
+    "sv": "Bidrag och stipendier till vård och uppfostran av barn och ungdomar samt till utbildning, för personer och organisationer med anknytning till Vetlanda kommun. Som ungdom räknas den som inte fyllt 27 år. Förvaltas av Handelsbanken.",
+    "en": "Grants and scholarships for the care and upbringing of children and young people and for education, for individuals and organisations connected to Vetlanda municipality. Youth means under 27. Administered by Handelsbanken."
+  },
+  "last_verified": "2026-08-21"
 }

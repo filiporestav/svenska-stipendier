@@ -2,13 +2,17 @@
   "id": "swea-sigrid-paskells-stipendium",
   "name": "SWEA – Sigrid Paskells Stipendium",
   "url": "https://swea.org/stipendier/paskell-stipendiet/",
-  "opens": null,
-  "deadline": "2026-01-15",
+  "opens": "2026-09-15",
+  "deadline": "2027-01-15",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "kultur",
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Stipendium för scenkonst: sång, dans, teater och instrumentalmusik i tur och ordning, ett område per år. Sökande ska vara 21–26 år, ha svensk anknytning och tala svenska. Stipendiet är på 15 000 US-dollar och ansökan öppnar 15 september.",
+    "en": "A scholarship for the performing arts: singing, dance, theatre and instrumental music in rotation, one discipline per year. Applicants must be 21–26, have Swedish ties and speak Swedish. The award is USD 15,000 and applications open on 15 September."
+  },
+  "last_verified": "2026-08-21"
 }

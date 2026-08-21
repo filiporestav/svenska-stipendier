@@ -3,11 +3,15 @@
   "name": "Utlandsstudiestipendiet",
   "url": "https://www.utlandsstudier.se/artiklar/utlandsstudiestipendiet",
   "opens": null,
-  "deadline": "2025-12-15",
+  "deadline": "2026-12-15",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Öppet för alla oavsett ålder och bakgrund, för heltidsstudier som börjar nästa år vid någon av ett sjuttiotal förhandsgodkända skolor utomlands. Fyra till åtta stipendier delas ut per år på 5 000–20 000 kr vardera.",
+    "en": "Open to anyone regardless of age or background, for full-time studies starting the following year at one of some seventy pre-approved schools abroad. Four to eight scholarships of SEK 5,000–20,000 each are awarded per year."
+  },
+  "last_verified": "2026-08-21"
 }

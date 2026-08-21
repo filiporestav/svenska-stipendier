@@ -6,9 +6,14 @@
   "deadline": "2025-08-31",
   "recurrence": "annual",
   "apply_via": "email",
+  "apply_email": "info@vanbruun.com",
   "tags": [
-    "foretagsstipendium"
+    "foretagsstipendium",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
-  "apply_email": "info@vanbruun.com"
+  "notes": {
+    "sv": "För studenter vid svensk högskola eller universitet som ska studera utomlands via utbytesprogram. Stipendiet är på 1 000 euro. Ansökan mailas med studieintyg, CV, personbevis och personligt brev.",
+    "en": "For students at a Swedish university going abroad on an exchange programme. The award is EUR 1,000. Applications are emailed with proof of enrolment, a CV, a personal certificate and a personal letter."
+  },
+  "last_verified": "2026-08-21"
 }

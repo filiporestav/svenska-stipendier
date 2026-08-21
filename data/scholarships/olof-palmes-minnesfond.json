@@ -1,17 +1,18 @@
 {
   "id": "olof-palmes-minnesfond",
   "name": "Olof Palmes Minnesfond",
-  "url": "https://www.palmefonden.se/palmestipendiet-gamla/soka-stipendium-las-mer-har/",
+  "url": "https://palmefonden.se/palmestipendiet/soka-stipendium/",
   "opens": null,
-  "deadline": "2025-09-20",
+  "deadline": "2026-09-20",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "utlandsstudier"
+    "utlandsstudier",
+    "internationellt"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Gruppansökan skickas gemensamt enligt instruktionerna på hemsidan.",
-    "en": "Group applications must be submitted jointly, per the website's instructions."
-  }
+    "sv": "Palmestipendiet. Enskilda sökande får vara högst 30 år; skolor, kulturgrupper och organisationer kan också söka. Stödjer internationellt ungdomsutbyte och studier om fred och nedrustning, mot rasism och främlingsfientlighet eller för internationell förståelse. Två ansökningstillfällen per år, 20 mars och 20 september. Enskilda kan söka upp till 15 000 kr.",
+    "en": "The Palme scholarship. Individual applicants may be at most 30; schools, cultural groups and organisations may also apply. Supports international youth exchange and studies on peace and disarmament, against racism and xenophobia, or for international understanding. Two rounds a year, 20 March and 20 September. Individuals may request up to SEK 15,000."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -5,7 +5,11 @@
   "opens": null,
   "deadline": "2026-03-31",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "post",
   "tags": [],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Stipendier för eftergymnasiala studier, studieresor eller utvecklingsprojekt som främjar ett självbestämt liv enligt Independent Living. Ansökningsblanketten skickas per post till GIL i Göteborg. Cirka 100 000 kr fördelas per år.",
+    "en": "Scholarships for post-secondary studies, study trips or development projects promoting self-determined living in the Independent Living tradition. The form is posted to GIL in Gothenburg. Around SEK 100,000 is distributed each year."
+  },
+  "last_verified": "2026-08-21"
 }

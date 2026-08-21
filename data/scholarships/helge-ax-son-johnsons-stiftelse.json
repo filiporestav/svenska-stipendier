@@ -2,12 +2,17 @@
   "id": "helge-ax-son-johnsons-stiftelse",
   "name": "Helge Ax:son Johnsons Stiftelse",
   "url": "https://www.haxsonj.se/",
-  "opens": "2025-12-01",
-  "deadline": "2026-02-01",
+  "opens": "2026-12-01",
+  "deadline": "2027-02-01",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "forskning"
+    "forskning",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Anslag till välgörenhet, litterär och konstnärlig verksamhet, vetenskaplig forskning och utbildning i Sverige. Från 2026 års ansökningsomgång ersätts två tidigare studiekategorier av stipendier för högre studier utomlands. Ansökan 1 december–1 februari.",
+    "en": "Grants for charitable work, literary and artistic activity, scientific research and education in Sweden. From the 2026 round, two former study categories are replaced by scholarships for higher studies abroad. Applications 1 December–1 February."
+  },
+  "last_verified": "2026-08-21"
 }

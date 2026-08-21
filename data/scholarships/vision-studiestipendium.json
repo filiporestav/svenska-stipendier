@@ -1,17 +1,18 @@
 {
   "id": "vision-studiestipendium",
   "name": "Vision Studiestipendium",
-  "url": "https://vision.se/",
+  "url": "https://vision.se/stipendier/",
   "opens": "2026-01-01",
   "deadline": "2026-02-28",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 3000,
   "tags": [
     "medlemskap"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Kräver medlemskap i Vision.",
-    "en": "Requires membership in Vision."
-  }
+    "sv": "Kräver medlemskap i Vision. Ett stimulansbidrag på 3 000 kr som lottas ut bland de ansökningar som uppfyller kraven. Gäller studerande medlemmar och nyexaminerade som studerar i Sverige.",
+    "en": "Requires membership in Vision. A one-off grant of SEK 3,000 drawn by lot among applications that meet the requirements. Open to student members and recent graduates studying in Sweden."
+  },
+  "last_verified": "2026-08-21"
 }

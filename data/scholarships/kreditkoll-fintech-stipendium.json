@@ -3,11 +3,19 @@
   "name": "Kreditkoll Fintech-stipendium",
   "url": "https://www.kreditkoll.nu/fintech-stipendium",
   "opens": null,
-  "deadline": "2025-10-31",
+  "deadline": "2026-10-31",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "info@becksolutions.se",
+  "typical_amount_sek": 5000,
   "tags": [
-    "foretagsstipendium"
+    "foretagsstipendium",
+    "examensarbete",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För heltidsstudenter som antingen skriver C- eller D-uppsats om fintech eller studerar utomlands. Två ansökningstillfällen per år, 31 oktober och 30 april. Ansökan mailas in.",
+    "en": "For full-time students either writing a C- or D-level thesis on fintech or studying abroad. Two rounds a year, 31 October and 30 April. Applications are emailed."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -6,7 +6,12 @@
   "deadline": "2026-05-01",
   "recurrence": "annual",
   "apply_via": "website",
-  "tags": [],
-  "last_verified": "2026-07-27",
-  "typical_amount_sek": 10000
+  "tags": [
+    "kultur"
+  ],
+  "notes": {
+    "sv": "Bidrag till vetenskaplig forskning och ungdomsutbildning inom form, konsthantverk och industridesign. Enskilda, skolor, museer och föreningar kan söka. Ansökan ska vara inne innan projektet börjar. Beviljade belopp ligger oftast mellan 3 000 och 10 000 kr.",
+    "en": "Grants for scientific research and youth education in design, crafts and industrial design. Individuals, schools, museums and associations may apply. Applications must arrive before the project starts. Awards are usually SEK 3,000–10,000."
+  },
+  "last_verified": "2026-08-21"
 }

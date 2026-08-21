@@ -3,14 +3,14 @@
   "name": "Einar Hansens Allhemsstiftelse",
   "url": "https://einarhansensallhemsstiftelse.se/ansokan/",
   "opens": null,
-  "deadline": "2025-08-31",
+  "deadline": "2026-08-31",
   "recurrence": "annual",
-  "apply_via": "email",
-  "tags": [],
-  "last_verified": "2026-07-27",
+  "apply_via": "website",
   "report_required": true,
+  "tags": [],
   "notes": {
-    "sv": "Ansökan mailas till adressen som anges på stiftelsens webbplats.",
-    "en": "Applications are emailed to the address listed on the foundation's website."
-  }
+    "sv": "Anslag till vetenskaplig forskning och publicering samt till undervisning och utbildning. Från 2026 sker all ansökan elektroniskt via FundPro; systemet stänger den sista augusti kl. 16.",
+    "en": "Grants for scientific research and publishing, and for teaching and education. From 2026 all applications are made electronically via FundPro; the system closes on the last day of August at 16:00."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -7,8 +7,12 @@
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "forskning"
+    "forskning",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
-  "typical_amount_sek": 160000
+  "notes": {
+    "sv": "För doktorander och forskare som disputerat inom de senaste sju åren och är anställda vid svenskt lärosäte eller offentligt forskningsinstitut. Medel finns bland annat för praktiska ingenjörsstudier utomlands för svenska medborgare under 30 år. Stipendier ges upp till 250 000 kr.",
+    "en": "For doctoral students and researchers who took their doctorate within the past seven years and are employed at a Swedish university or public research institute. Funds include practical engineering studies abroad for Swedish citizens under 30. Stipends are awarded up to SEK 250,000."
+  },
+  "last_verified": "2026-08-21"
 }

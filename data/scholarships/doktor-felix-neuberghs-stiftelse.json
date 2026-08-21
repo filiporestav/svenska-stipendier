@@ -2,11 +2,15 @@
   "id": "doktor-felix-neuberghs-stiftelse",
   "name": "Doktor Felix Neuberghs Stiftelse",
   "url": "https://www.felixneubergh.se/studerande/",
-  "opens": "2025-11-01",
-  "deadline": "2025-11-30",
+  "opens": "2026-11-01",
+  "deadline": "2026-11-30",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 20000,
   "tags": [],
-  "last_verified": "2026-07-27",
-  "typical_amount_sek": 20000
+  "notes": {
+    "sv": "För studerande vid högskola eller universitet som är bosatta i Sverige. Ansökan 1–30 november; besked i februari och redovisning senast 1 september.",
+    "en": "For students in higher education resident in Sweden. Applications 1–30 November; decisions in February and reporting by 1 September."
+  },
+  "last_verified": "2026-08-21"
 }

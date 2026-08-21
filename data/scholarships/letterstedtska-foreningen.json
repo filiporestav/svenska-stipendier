@@ -2,12 +2,17 @@
   "id": "letterstedtska-foreningen",
   "name": "Letterstedtska Föreningen",
   "url": "https://www.letterstedtska.org/anslag/",
-  "opens": "2025-08-15",
-  "deadline": "2025-09-15",
+  "opens": "2026-08-15",
+  "deadline": "2026-09-15",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "forskning"
+    "forskning",
+    "internationellt"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Två ansökningsperioder per år: 15 januari–15 februari och 15 augusti–15 september. Enskilda kan söka resestipendier för studieresor till övriga Norden; organisationer kan söka anslag för nordiskt samarbete inom vetenskap, konst och näringsliv. Sökta belopp ligger oftast mellan 5 000 och 50 000 kr.",
+    "en": "Two application windows a year: 15 January–15 February and 15 August–15 September. Individuals may apply for travel grants for study trips to other Nordic countries; organisations may apply for Nordic co-operation in science, the arts and industry. Amounts requested are usually SEK 5,000–50,000."
+  },
+  "last_verified": "2026-08-21"
 }

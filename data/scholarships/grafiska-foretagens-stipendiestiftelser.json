@@ -5,9 +5,13 @@
   "opens": null,
   "deadline": "2026-02-20",
   "recurrence": "annual",
-  "apply_via": "website",
-  "tags": [],
-  "last_verified": "2026-07-27",
+  "apply_via": "email",
+  "apply_email": "stipendier@grafiska.se",
   "report_required": true,
-  "typical_amount_sek": 10000
+  "tags": [],
+  "notes": {
+    "sv": "För forskare, studerande och lärare vid grafiska utbildningar. Stödjer utbildning och vetenskaplig forskning inom den grafiska branschen. Ansökan mailas eller skickas per post.",
+    "en": "For researchers, students and teachers in graphic arts education. Supports education and scientific research in the graphic industry. Applications are emailed or posted."
+  },
+  "last_verified": "2026-08-21"
 }

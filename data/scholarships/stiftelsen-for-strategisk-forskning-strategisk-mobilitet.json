@@ -1,13 +1,17 @@
 {
   "id": "stiftelsen-for-strategisk-forskning-strategisk-mobilitet",
   "name": "Stiftelsen för Strategisk Forskning – Strategisk mobilitet",
-  "url": "https://strategiska.se/utlysning/sok-strategisk-mobilitet-2025/",
+  "url": "https://strategiska.se/utlysning/dags-att-byta-forskningsmiljo-sok-strategisk-mobilitet-2026/",
   "opens": null,
-  "deadline": "2025-09-09",
+  "deadline": "2026-09-15",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Finansierar lönekostnaden för disputerade forskare som under en period byter forskningsmiljö mellan akademi och näringsliv. Det är inte ett studentstipendium.",
+    "en": "Funds the salary cost of researchers with a doctorate who move between academia and industry for a period. It is not a student scholarship."
+  },
+  "last_verified": "2026-08-21"
 }

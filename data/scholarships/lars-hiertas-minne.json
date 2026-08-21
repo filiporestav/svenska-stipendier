@@ -2,12 +2,16 @@
   "id": "lars-hiertas-minne",
   "name": "Lars Hiertas Minne",
   "url": "https://www.larshiertasminne.se/sv/",
-  "opens": "2025-08-15",
-  "deadline": "2025-10-01",
+  "opens": "2026-08-15",
+  "deadline": "2026-10-01",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Forskningsanslag till enskilda forskare inom alla forskningsområden, samt anslag till sociala ändamål och slöjder. Ansökningssystemet är öppet 15 augusti–1 oktober.",
+    "en": "Research grants for individual researchers in all fields, plus grants for social purposes and crafts. The application system is open 15 August–1 October."
+  },
+  "last_verified": "2026-08-21"
 }

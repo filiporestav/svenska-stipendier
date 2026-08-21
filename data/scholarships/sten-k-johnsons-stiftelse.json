@@ -2,13 +2,17 @@
   "id": "sten-k-johnsons-stiftelse",
   "name": "Sten K Johnsons Stiftelse",
   "url": "https://www.stenkjohnsonsstiftelse.se/om-stiftelsen/",
-  "opens": "2026-01-16",
-  "deadline": "2026-02-13",
+  "opens": "2026-01-15",
+  "deadline": "2026-02-12",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "kultur",
     "forskning"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Stödjer forskning, utveckling, utbildning och praktisk tillämpning inom teknik, medicin, entreprenörskap, litteratur och musik. Ansökan 15 januari–12 februari.",
+    "en": "Supports research, development, education and practical application in technology, medicine, entrepreneurship, literature and music. Applications 15 January–12 February."
+  },
+  "last_verified": "2026-08-21"
 }

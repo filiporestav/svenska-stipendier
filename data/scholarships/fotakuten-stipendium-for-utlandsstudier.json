@@ -3,12 +3,17 @@
   "name": "Fotakuten – Stipendium för utlandsstudier",
   "url": "https://fotakuten.se/sidor/stipendium-for-studier-utomlands",
   "opens": null,
-  "deadline": "2025-10-31",
+  "deadline": "2026-10-31",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "typical_amount_sek": 5000,
   "tags": [
     "foretagsstipendium",
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För heltidsstudenter som studerar eller ska studera utomlands. Två ansökningstillfällen per år, 30 april och 31 oktober. Ansökan mailas till adressen som anges på webbplatsen.",
+    "en": "For full-time students studying or about to study abroad. Two rounds a year, 30 April and 31 October. Applications are emailed to the address given on the website."
+  },
+  "last_verified": "2026-08-21"
 }

@@ -1,17 +1,18 @@
 {
   "id": "sverige-amerika-stiftelsen",
   "name": "Sverige-Amerika Stiftelsen",
-  "url": "https://sweamfo.se/",
+  "url": "https://sweamfo.se/stipendier/",
   "opens": null,
   "deadline": "2025-09-15",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "utlandsstudier"
+    "utlandsstudier",
+    "internationellt"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Kräver avlagd examen och en vistelse på minst sex månader.",
-    "en": "Requires a completed degree and a stay of at least six months."
-  }
+    "sv": "Stipendier för studier och forskning i USA och Kanada, inom alla vetenskapliga discipliner. Stiftelsen har program för master-, doktorand- och postdoktorsnivå samt särskilda stipendier till Augustana College och The Lawrenceville School.",
+    "en": "Scholarships for study and research in the USA and Canada, across all academic disciplines. The foundation runs programmes at master's, doctoral and postdoctoral level, plus dedicated scholarships to Augustana College and The Lawrenceville School."
+  },
+  "last_verified": "2026-08-21"
 }

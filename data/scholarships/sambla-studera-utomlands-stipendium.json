@@ -3,12 +3,17 @@
   "name": "Sambla – Studera utomlands Stipendium",
   "url": "https://www.sambla.se/sambla-stipendium/",
   "opens": null,
-  "deadline": "2025-12-01",
+  "deadline": "2026-05-31",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 10000,
   "tags": [
     "foretagsstipendium",
     "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För studenter vid svenskt lärosäte som studerar eller ska studera utomlands minst en termin på heltid, och som är folkbokförda i Sverige.",
+    "en": "For students at a Swedish university studying or about to study abroad full-time for at least one term, and registered as resident in Sweden."
+  },
+  "last_verified": "2026-08-21"
 }

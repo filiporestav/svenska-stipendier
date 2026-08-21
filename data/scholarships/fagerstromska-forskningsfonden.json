@@ -3,11 +3,16 @@
   "name": "Fagerströmska Forskningsfonden",
   "url": "https://www.samlarforbundet.se/om-oss/forskningsfonden/",
   "opens": null,
-  "deadline": "2025-12-31",
+  "deadline": "2026-12-31",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "fagerstromska@samlarforbundet.se",
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Stiftelsen Einar Fagerströms forskningsfond inom Sveriges Samlarförbund. Stödjer kulturell och vetenskaplig forskning inom förbundets samlarområden. Både medlemmar och icke-medlemmar kan söka.",
+    "en": "The Einar Fagerström research fund within Sveriges Samlarförbund. Supports cultural and scientific research in the association's collecting fields. Open to members and non-members alike."
+  },
+  "last_verified": "2026-08-21"
 }

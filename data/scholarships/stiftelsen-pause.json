@@ -5,14 +5,15 @@
   "opens": null,
   "deadline": "2026-01-31",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "kontakt@stiftelsen-pause.se",
+  "typical_amount_sek": 100000,
   "tags": [
-    "forskning",
-    "ai"
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Inriktning på artificiell intelligens och maskininlärning i kunskapsarbete.",
-    "en": "Focused on artificial intelligence and machine learning in knowledge work."
-  }
+    "sv": "Stipendium inom HR och ledarskap för studier eller praktik utomlands i minst tre månader. 100 000 kr. Varje utlysning har ett eget tema – temat för 2026 var AI i rekrytering och urval. Sökande ska ha en avslutad eller pågående universitetsutbildning och vara svensk medborgare eller ha bott i Sverige i minst två år.",
+    "en": "A scholarship in HR and leadership for study or an internship abroad lasting at least three months. SEK 100,000. Each round has its own theme — the 2026 theme was AI in recruitment and selection. Applicants must have completed or ongoing university education and be Swedish citizens or have lived in Sweden for at least two years."
+  },
+  "last_verified": "2026-08-21"
 }

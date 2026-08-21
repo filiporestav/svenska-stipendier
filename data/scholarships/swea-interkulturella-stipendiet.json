@@ -5,9 +5,15 @@
   "opens": null,
   "deadline": "2026-01-15",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "interkultstip@swea.org",
   "tags": [
-    "utlandsstudier"
+    "utlandsstudier",
+    "internationellt"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Agneta och Gunnar Nilssons stipendium för studier av interkulturella relationer. Kräver minst tre avslutade år av grundutbildning vid svenskt lärosäte och konkreta planer på interkulturella studier utomlands. Stipendiet är på 15 000 US-dollar och är öppet för alla nationaliteter.",
+    "en": "The Agneta and Gunnar Nilsson scholarship for the study of intercultural relations. Requires at least three completed years of undergraduate study at a Swedish university and concrete plans for intercultural studies abroad. The award is USD 15,000 and is open to all nationalities."
+  },
+  "last_verified": "2026-08-21"
 }

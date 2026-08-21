@@ -2,10 +2,16 @@
   "id": "fredrika-bremer-forbundets-stipendiestiftelse",
   "name": "Fredrika Bremer Förbundets Stipendiestiftelse",
   "url": "https://www.bremerstipendier.se/",
-  "opens": "2025-08-15",
-  "deadline": "2025-10-15",
+  "opens": "2026-08-15",
+  "deadline": "2026-10-15",
   "recurrence": "annual",
   "apply_via": "website",
-  "tags": [],
-  "last_verified": "2026-07-27"
+  "tags": [
+    "kvinnor"
+  ],
+  "notes": {
+    "sv": "Stipendier till unga kvinnor som studerar på heltid på högskolenivå. Ansökningsblanketten laddas ner från stiftelsens webbplats.",
+    "en": "Scholarships for young women in full-time higher education. The application form is downloaded from the foundation's website."
+  },
+  "last_verified": "2026-08-21"
 }

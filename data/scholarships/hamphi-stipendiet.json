@@ -6,9 +6,15 @@
   "deadline": "2025-08-31",
   "recurrence": "annual",
   "apply_via": "email",
+  "apply_email": "info@hamphi.com",
+  "typical_amount_sek": 5000,
   "tags": [
-    "foretagsstipendium"
+    "foretagsstipendium",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
-  "apply_email": "info@hamphi.com"
+  "notes": {
+    "sv": "För studenter vid högskola eller universitet i Skandinavien som ska studera utomlands. Ansökningsperiod maj–augusti; ansökan mailas med studieintyg, antagningsbesked, CV och personligt brev.",
+    "en": "For students at higher education institutions in Scandinavia going abroad to study. Application window May–August; applications are emailed with proof of enrolment, admission letter, CV and a personal letter."
+  },
+  "last_verified": "2026-08-21"
 }

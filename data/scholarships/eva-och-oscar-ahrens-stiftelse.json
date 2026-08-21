@@ -2,10 +2,14 @@
   "id": "eva-och-oscar-ahrens-stiftelse",
   "name": "Eva och Oscar Ahréns Stiftelse",
   "url": "https://www.ahrenstiftelse.se/",
-  "opens": "2025-10-01",
-  "deadline": "2026-01-31",
+  "opens": "2026-10-01",
+  "deadline": "2027-01-31",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Stödjer vård av utsatta barn, hjälp till behövande, stipendier för kristen utbildning och medicinsk forskning. Ansökningstiden är 1 oktober–31 januari.",
+    "en": "Supports care of vulnerable children, help for those in need, stipends for Christian education, and medical research. The application window is 1 October–31 January."
+  },
+  "last_verified": "2026-08-21"
 }

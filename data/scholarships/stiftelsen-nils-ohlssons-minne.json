@@ -7,5 +7,9 @@
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För barn och ungdomar bosatta i Sverige med allvarlig syn-, tal-, språk- eller hörselnedsättning som visar intresse och förmåga för fortsatt teoretisk eller praktisk utbildning. Bidraget kompletterar statligt och kommunalt stöd, det ersätter det inte.",
+    "en": "For children and young people resident in Sweden with a serious visual, speech, language or hearing impairment who show interest and aptitude for further theoretical or practical education. The grant supplements state and municipal support rather than replacing it."
+  },
+  "last_verified": "2026-08-21"
 }

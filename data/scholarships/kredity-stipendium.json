@@ -3,13 +3,18 @@
   "name": "Kredity Stipendium",
   "url": "https://kredity.se/stipendium/",
   "opens": null,
-  "deadline": "2026-03-31",
+  "deadline": "2027-03-31",
   "recurrence": "annual",
   "apply_via": "email",
-  "tags": [
-    "foretagsstipendium"
-  ],
-  "last_verified": "2026-07-27",
   "apply_email": "kontakt@kredity.se",
-  "typical_amount_sek": 2500
+  "typical_amount_sek": 5000,
+  "tags": [
+    "foretagsstipendium",
+    "examensarbete"
+  ],
+  "notes": {
+    "sv": "För kandidat-, magister- eller masteruppsats inom ekonomi, statsvetenskap, juridik eller internationella relationer med ekonomisk anknytning. Ansökan mailas med en kort beskrivning av uppsatsidén.",
+    "en": "For a bachelor's or master's thesis in economics, political science, law or international relations with an economic angle. Applications are emailed with a short description of the thesis idea."
+  },
+  "last_verified": "2026-08-21"
 }

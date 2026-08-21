@@ -2,16 +2,16 @@
   "id": "magn-bergvalls-stiftelse",
   "name": "Magn. Bergvalls Stiftelse",
   "url": "https://www.magnbergvallsstiftelse.nu/Default.aspx",
-  "opens": null,
-  "deadline": "2025-09-15",
+  "opens": "2026-08-15",
+  "deadline": "2026-09-15",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Anger krav på doktorsexamen – kontrollera behörigheten innan du söker.",
-    "en": "States a doctorate requirement — check eligibility before applying."
-  }
+    "sv": "Anslag inom fyra områden: medicin, natur och teknik, humaniora och samhällsvetenskap samt svenska hjälporganisationer. Ansökningssystemet öppnar 15 augusti och beslut meddelas 15 januari.",
+    "en": "Grants in four areas: medicine, science and technology, the humanities and social sciences, and Swedish aid organisations. The application system opens on 15 August and decisions are announced on 15 January."
+  },
+  "last_verified": "2026-08-21"
 }

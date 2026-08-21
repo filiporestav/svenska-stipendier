@@ -2,17 +2,17 @@
   "id": "kamrathjalpsfonden-utlandsstudier",
   "name": "Kamrathjälpsfonden – Utlandsstudier",
   "url": "https://www.sverigesingenjorer.se/medlemskap/stipendier/kamrathjalpsfonden-utlandsstudier/",
-  "opens": "2025-07-01",
-  "deadline": "2025-10-01",
+  "opens": "2026-07-01",
+  "deadline": "2026-10-01",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "utlandsstudier",
     "medlemskap"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Kräver medlemskap i Sveriges Ingenjörer.",
-    "en": "Requires membership in Sveriges Ingenjörer."
-  }
+    "sv": "Kräver minst sex månaders medlemskap i Sveriges Ingenjörer. Ansökningsperiod 1 juli–1 oktober; den som studerar utomlands längre än ett år prioriteras. Besked per e-post i december.",
+    "en": "Requires at least six months' membership in Sveriges Ingenjörer. Application window 1 July–1 October; applicants studying abroad for more than a year are given preference. Decisions by email in December."
+  },
+  "last_verified": "2026-08-21"
 }

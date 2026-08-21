@@ -7,5 +7,9 @@
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Främjar utbildning för unga som bedriver eftergymnasiala studier om minst tre år, gärna med inslag av studier utomlands. Söks via portalen stiftelseansokan.se.",
+    "en": "Promotes education for young people in post-secondary studies lasting at least three years, preferably including a period of study abroad. Applied for through the stiftelseansokan.se portal."
+  },
+  "last_verified": "2026-08-21"
 }

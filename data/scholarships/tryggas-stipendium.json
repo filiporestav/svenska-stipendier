@@ -3,11 +3,18 @@
   "name": "Tryggas Stipendium",
   "url": "https://trygga.com/om-oss/stipendium/",
   "opens": null,
-  "deadline": "2025-12-15",
+  "deadline": "2026-12-15",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "stipendium@trygga.com",
+  "typical_amount_sek": 5000,
   "tags": [
-    "foretagsstipendium"
+    "foretagsstipendium",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För heltidsstudenter folkbokförda i Sverige som studerar eller ska studera utomlands. Ansökan mailas med studieintyg och ett personligt brev; vinnare utses i januari.",
+    "en": "For full-time students registered as resident in Sweden who are studying or about to study abroad. Applications are emailed with proof of enrolment and a personal letter; winners are chosen in January."
+  },
+  "last_verified": "2026-08-21"
 }

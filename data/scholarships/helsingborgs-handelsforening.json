@@ -6,8 +6,10 @@
   "deadline": "2026-04-30",
   "recurrence": "annual",
   "apply_via": "website",
-  "tags": [
-    "region"
-  ],
-  "last_verified": "2026-07-27"
+  "tags": [],
+  "notes": {
+    "sv": "Studiestipendier till personer bosatta i Sverige inom fyra kategorier: akademiska studier som doktorand eller MBA, handel och hantverk, språkstudier och övrig eftergymnasial utbildning. Ansökan 1–30 april. Cirka 65 stipendier delas ut varje år.",
+    "en": "Study scholarships for people resident in Sweden in four categories: academic study such as doctorates and MBAs, retail and crafts, language studies, and other post-secondary education. Applications 1–30 April. Around 65 scholarships are awarded each year."
+  },
+  "last_verified": "2026-08-21"
 }

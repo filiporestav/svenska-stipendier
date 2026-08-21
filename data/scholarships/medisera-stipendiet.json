@@ -5,15 +5,15 @@
   "opens": null,
   "deadline": "2026-07-31",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "info@medisera.se",
+  "typical_amount_sek": 5000,
   "tags": [
-    "kth",
     "forskning"
   ],
-  "last_verified": "2026-08-21",
-  "typical_amount_sek": 5000,
   "notes": {
-    "sv": "För fortbildning, utvecklingsarbete eller forskning inom hälsa som motverkar livsstilssjukdomar. Kräver koppling till KTH.",
-    "en": "For training, development work or research in health that counters lifestyle diseases. Requires a connection to KTH."
-  }
+    "sv": "För dig som forskar eller studerar inom ett hälsorelaterat område. Stipendiet avser fortbildning, utvecklingsarbete eller forskning som motverkar livsstilssjukdomar. Ansökan är en text på högst en A4 som mailas in senast sista juli; stipendiaten utses senast sista oktober.",
+    "en": "For anyone researching or studying in a health-related field. The scholarship covers further training, development work or research that counters lifestyle diseases. The application is a text of at most one A4 page, emailed by the last day of July; the recipient is announced by the end of October."
+  },
+  "last_verified": "2026-08-21"
 }

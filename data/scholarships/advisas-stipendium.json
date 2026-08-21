@@ -1,13 +1,18 @@
 {
   "id": "advisas-stipendium",
-  "name": "Advisas Stipendium",
+  "name": "Advisas stipendium för unga studenter",
   "url": "https://advisa.se/advisas-stipendium/",
   "opens": null,
-  "deadline": "2025-12-01",
+  "deadline": "2026-12-01",
   "recurrence": "annual",
   "apply_via": "website",
+  "typical_amount_sek": 10000,
   "tags": [
     "foretagsstipendium"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För dig under 26 som studerar på heltid vid ett svenskt lärosäte och är folkbokförd i Sverige. Ansökan består av ett spartips för studentlivet.",
+    "en": "For students under 26 in full-time study at a Swedish university and registered in Sweden. The application is a money-saving tip for student life."
+  },
+  "last_verified": "2026-08-21"
 }

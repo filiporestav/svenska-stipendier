@@ -3,15 +3,19 @@
   "name": "Kreditkortlistan Stipendium",
   "url": "https://kreditkortlistan.se/stipendium/",
   "opens": null,
-  "deadline": "2025-10-31",
+  "deadline": "2026-10-30",
   "recurrence": "annual",
-  "apply_via": "website",
+  "apply_via": "email",
+  "apply_email": "info@enklamedia.com",
+  "typical_amount_sek": 5000,
   "tags": [
-    "foretagsstipendium"
+    "foretagsstipendium",
+    "examensarbete",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Vinnare publiceras cirka två veckor efter deadline.",
-    "en": "Winners are published roughly two weeks after the deadline."
-  }
+    "sv": "Enkla Medias stipendium, för kandidat-, magister- eller masteruppsats inom ekonomi – privatekonomi, företagsekonomi, skulder, digitala betallösningar, fintech eller finansmarknaden – eller för studier utomlands. Två ansökningstillfällen per år, 30 oktober och 30 april. Vinnare utses inom fyra veckor.",
+    "en": "Enkla Media's scholarship, for a bachelor's or master's thesis in economics — personal finance, business economics, debt, digital payments, fintech or financial markets — or for studies abroad. Two rounds a year, 30 October and 30 April. Winners are chosen within four weeks."
+  },
+  "last_verified": "2026-08-21"
 }

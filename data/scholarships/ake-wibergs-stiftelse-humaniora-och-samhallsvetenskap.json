@@ -1,17 +1,17 @@
 {
   "id": "ake-wibergs-stiftelse-humaniora-och-samhallsvetenskap",
   "name": "Åke Wibergs Stiftelse – Humaniora och samhällsvetenskap",
-  "url": "https://ake-wiberg.se/anslag-humaniora-samhallsvetenskap",
-  "opens": "2025-06-01",
-  "deadline": "2025-09-15",
+  "url": "https://ake-wiberg.se/humsam-anslag",
+  "opens": "2026-06-01",
+  "deadline": "2026-09-17",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
     "forskning"
   ],
-  "last_verified": "2026-07-27",
   "notes": {
-    "sv": "Riktar sig till humaniora och samhällsvetenskap.",
-    "en": "Aimed at the humanities and social sciences."
-  }
+    "sv": "Anslag till forskning inom humaniora och samhällsvetenskap: projektanslag, tryckningsbidrag och personliga stipendier. Sökande ska vara disputerad. Högst 400 000 kr.",
+    "en": "Grants for research in the humanities and social sciences: project grants, publication subsidies and personal research stipends. Applicants must hold a doctorate. Up to SEK 400,000."
+  },
+  "last_verified": "2026-08-21"
 }

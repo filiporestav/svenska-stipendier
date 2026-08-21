@@ -1,0 +1,16 @@
+{
+  "id": "martinstipendiet",
+  "name": "Martinstipendiet",
+  "url": "https://martinstipendiet.se/",
+  "opens": null,
+  "deadline": "2025-12-23",
+  "recurrence": "annual",
+  "apply_via": "website",
+  "typical_amount_sek": 30000,
+  "tags": [],
+  "notes": {
+    "sv": "Utses genom nominering och är öppet för alla högskolestudenter oavsett inriktning som visar talang för försäljning. Vinnaren får 30 000 kr och den som nominerat vinnaren 10 000 kr.",
+    "en": "Awarded by nomination and open to all higher education students, whatever their field, who show sales talent. The winner receives SEK 30,000 and whoever nominated them SEK 10,000."
+  },
+  "last_verified": "2026-08-21"
+}

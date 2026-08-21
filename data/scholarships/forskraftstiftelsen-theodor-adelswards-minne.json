@@ -2,12 +2,17 @@
   "id": "forskraftstiftelsen-theodor-adelswards-minne",
   "name": "Forskraftstiftelsen Theodor Adelswärds Minne",
   "url": "https://www.fstam.se/ansokan/",
-  "opens": "2025-06-15",
-  "deadline": "2025-09-15",
+  "opens": "2026-06-01",
+  "deadline": "2026-09-15",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "forskning"
+    "forskning",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "För studenter på avancerad nivå och doktorander vid svenska lärosäten som ska göra fältstudier eller gästforska utomlands inom internationella relationer, fred, mänskliga rättigheter, energi eller miljö. Högst 50 000 kr på masternivå och 100 000 kr på doktorandnivå.",
+    "en": "For advanced-level students and doctoral candidates at Swedish universities doing field studies or guest research abroad on international relations, peace, human rights, energy or the environment. Up to SEK 50,000 at master's level and SEK 100,000 at doctoral level."
+  },
+  "last_verified": "2026-08-21"
 }

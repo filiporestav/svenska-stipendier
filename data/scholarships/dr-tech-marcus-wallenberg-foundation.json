@@ -2,12 +2,17 @@
   "id": "dr-tech-marcus-wallenberg-foundation",
   "name": "Dr Tech Marcus Wallenberg Foundation",
   "url": "https://tmw.wallenberg.org/en/startsida",
-  "opens": "2026-03-20",
-  "deadline": "2026-04-20",
+  "opens": null,
+  "deadline": "2027-04-15",
   "recurrence": "annual",
   "apply_via": "website",
   "tags": [
-    "forskning"
+    "forskning",
+    "utlandsstudier"
   ],
-  "last_verified": "2026-07-27"
+  "notes": {
+    "sv": "Svenska medborgare med svensk akademisk examen kan söka stipendium för masterstudier vid utländska universitet inom internationellt industriellt företagande. Stiftelsen driver även ett postdok-program vid Georgetown University.",
+    "en": "Swedish citizens with a Swedish academic degree may apply for scholarships for master's studies at foreign universities in international industrial entrepreneurship. The foundation also runs a postdoctoral programme at Georgetown University."
+  },
+  "last_verified": "2026-08-21"
 }
